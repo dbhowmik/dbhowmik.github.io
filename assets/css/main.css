@@ -1069,7 +1069,7 @@
 
 	body {
 		background: #D4D9DD url("images/bg03.jpg");
-		color: #474f51;
+		color: #404040;
 		font-size: 13.5pt;
 		font-family: 'Yanone Kaffeesatz';
 		line-height: 1.85em;
@@ -1077,7 +1077,7 @@
 	}
 
 	input, textarea, select {
-		color: #474f51;
+		color: #404040;
 		font-size: 13.5pt;
 		font-family: 'Yanone Kaffeesatz';
 		line-height: 1.85em;
@@ -1330,7 +1330,7 @@
 				}
 
 					#header nav a {
-						color: #c6c8c8;
+						color: #f1f3f3;
 						text-decoration: none;
 						font-size: 1.4em;
 						margin-left: 60px;
@@ -1398,7 +1398,7 @@
 			}
 
 			#content h3 {
-				color: #96a9b5;
+				color: #2a343c;
 				font-size: 1.25em;
 			}
 
