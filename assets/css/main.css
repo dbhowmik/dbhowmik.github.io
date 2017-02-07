@@ -1527,9 +1527,9 @@
 
 /* Mobile */
 
-	#navPanel, #titleBar {
+	/*#navPanel, #titleBar {
 		display: show;
-	}
+	}*/
 
 	@media screen and (max-width: 736px) {
 
