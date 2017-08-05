@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<h2>Projekte</h2>
+<div class="grid">
+{% assign c = 0 %}{% assign d = 1 %}{% for p in site.data.projects %}{% if d == 0 %}
+</div>
+<div class="grid">
+<div class="unit one-third">
+<div class="card align-left">
+    <div class="card-content">
+        <h3>{{ p.name }}</h3><span>{{ p.description }}</span>
+    </div>
+    <div class="card-action">
+        {% if p.link %}
+        <a href="{{ p.link }}" class="btn"><i class="icon ion-earth"></i> LINK</a>
+        {% endif %}
+        {% if p.github %}
+        <a href="{{ p.github }}" class="btn"><i class="icon ion-social-github"></i> REPO</a>        
+        {% endif %}
+    </div>
+</div>
+</div>
+{% else %}
+<div class="unit one-third">
+<div class="card align-left">
+    <div class="card-content">
+        <h3>{{ p.name }}</h3><span>{{ p.description }}</span>
+    </div>
+    <div class="card-action">
+        {% if p.link %}
+        <a href="{{ p.link }}" class="btn"><i class="icon ion-earth"></i> LINK</a>
+        {% endif %}
+        {% if p.github %}
+        <a href="{{ p.github }}" class="btn"><i class="icon ion-social-github"></i> REPO</a>        
+        {% endif %}
+    </div>
+</div>
+</div>
+{% endif %}{% assign c=c | plus:1 %}{% assign d=c | modulo:3 %}{% endfor %}
+</div>

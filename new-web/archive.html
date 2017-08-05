@@ -1,0 +1,23 @@
+---
+title: Archiv
+layout: default
+---
+
+<div class="card">
+<div class="card-content">
+<h2>{{ page.title }}</h2>
+<p>
+{% for post in site.posts %}
+{% assign fdate = post.date | date: '%b %Y' %}
+{% if cur_date != fdate %}
+{% assign cur_date = fdate %}
+</p><h3 class="chip">{{ post.date | date: '%b, %Y' }}</h3><p>
+{% endif %}
+&emsp;<span class="chip">{{ post.date | date: '%-d.' }}</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncate: 60, '' }}</a><br>
+{% endfor %}
+</div>
+
+<div class="card-action">
+<a href="{{ site.baseurl }}/blog.html" class="btn">BLOG</a>
+</div>
+</div>

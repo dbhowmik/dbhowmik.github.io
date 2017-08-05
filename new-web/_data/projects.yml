@@ -1,0 +1,28 @@
+- name: 'Stolpersteine <span class="chip">NEW</span>'
+  link: http://stolpersteine-heilbronn.de
+  github: https://github.com/opendata-heilbronn/stolpersteine
+  description: Website für das Stolpersteine-Projekt, entstanden zusammen mit dem Stadtarchiv Heilbronn und OKLab HN
+- name: WOB Mototrade
+  link: "http://wob-mototrade.de"
+  description: "Fachmesse für die Motorradbranche (Realisation der Website)"
+- name: a. v. & m. Verlag
+  link: "http://avmverlag.de"
+  description: "(Realisation der Website)"
+- name: Code for Heilbronn
+  github: "https://github.com/opendata-heilbronn"
+  link: http://codefor.de/heilbronn
+  description: "Open-data Initiative rund um die Stadt Heilbronn (Einbringung in manche Projekte)"
+- name: material-theme
+  github: "https://github.com/lukas-h/material-theme"
+  description: "minimalistic jekyll blogging theme"
+  link: "http://himsel.me/material-theme/"
+- name: 'jekyll-timeline <span class="chip">NEW</span>'
+  github: "https://github.com/lukas-h/jekyll-timeline"
+  description: "Timeline Theme with Jekyll"
+  link: "http://himsel.me/06-16-2017-timeline-with-jekyll.html"
+- name: license badges
+  link: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+  description: A list of markdown license badges for software project README files. On Github Gist
+- name: C Collection
+  description: "collection of tools and snippets written in C"
+  github: "https://github.com/lukas-h/c"

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>map</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="http://stolpersteine-heilbronn.de/assets/js/Control.FullScreen.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        function getJson(url) {
+            var req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            return req.responseText;
+        }
+        var lat = 49.0, long = 11.0, path = null, zoom = 13;
+        var src = location.search;
+        src = src.substring(1, src.length);
+        if (src.length > 1) {
+            src = src.split('&');
+            console.log(src);
+            src.forEach(function (r) {
+                if (r.startsWith('src')) {
+                    path = r.substring(4, r.length);
+                }
+                if (r.startsWith('lat')) {
+                    lat = parseFloat(r.substring(4, r.length));
+                }
+                if (r.startsWith('long')) {
+                    long = parseFloat(r.substring(5, r.length));
+                }
+                if (r.startsWith('zoom')) {
+                    zoom = parseInt(r.substring(5, r.length));
+                }
+            });
+        } else {
+            console.log('no path to json');
+        }
+        var map = L.map('map', { closePopupOnClick: false }).setView([lat, long], zoom);
+        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.openstreetmap.org/">OSM</a>'
+        }).addTo(map);
+        if (path != null) {
+            var json = getJson(path);
+            json = JSON.parse(json);
+            L.geoJSON(json).addTo(map);
+        }
+    </script>
+</body>
+
+</html>

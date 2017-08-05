@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<div class="card align-left">
+<div class="card-content">
+	<article itemscope itemtype="http://schema.org/BlogPosting">
+        <meta itemscope itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" itemid="https://google.com/article"/>
+    
+{% if page.images %}
+<amp-carousel width="400"
+  height="200"
+  layout="responsive"
+  type="slides">
+{% for image in page.images %}
+<amp-img src="{{ site.baseurl }}{{ image }}"layout="fixed-height" height="400">
+</amp-img>
+{% endfor %}
+</amp-carousel>
+{% endif %}
+
+		<h3 itemprop="headline">{{ page.title }}<br>
+        <meta itemprop="datePublished" content="{{ page.date | date_to_xml_schema }}"/>
+        <meta itemprop="dateModified" content="{{ page.date | date_to_xml_schema }}"/>
+		<small class="chip">{{ page.date | date: "%b %-d, %Y" }}</small>
+		<a class="chip" href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ page.url | prepend: site.baseurl | prepend: site.url | cgi_escape }}"><i class="icon ion-social-twitter"></i> TWEET</a>
+		<a class="chip" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}"><i class="icon ion-android-share-alt"></i> LINK</a>
+		</h3>
+		
+		<div class="page-content" itemprop="articleBody">
+			{{ page.content }}
+		</div>
+        <p>
+        <div class="chip" itemprop="author">
+            <span itemscope itemtype="http://schema.org/Person">Artikel von <span itemprop="name">{{ page.author }}</span></span>
+        </div>
+        </p>
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="{{ site.url }}{{ site.baseurl }}/images/200x200.jpg">
+            <meta itemprop="width" content="200">
+            <meta itemprop="height" content="200">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="{{ site.url }}{{ site.baseurl }}/images/60x600.jpg">
+                <meta itemprop="width" content="600">
+                <meta itemprop="height" content="60">
+            </div>
+            <meta itemprop="name" content="Lukas Himsel">
+        </div>
+        <p>
+            {% for cat in page.categories %}
+            <a href="{{ site.baseurl }}/categories.html#{{ cat }}" class="chip">{{ cat }}</a>
+            {% endfor %}
+        </p>
+	</article>
+</div>
+    <div class="card-action align-center">
+    {% if page.next.url %}
+                    <a class="btn " href="{{ page.next.url | prepend: site.baseurl }}">
+                        NÄCHSTER
+                    </a>
+                    {% else %}
+                    <a class="btn disabled">
+                        NÄCHSTER
+                    </a>
+                    {% endif %}
+                    {% if page.previous.url %}
+                    <a class="btn" href="{{ page.previous.url | prepend: site.baseurl }}">
+                        VORHERIGER
+                    </a>
+                    {% else %}
+                    <a class="btn disabled">
+                        VORHERIGER
+                    </a>
+                    {% endif %}
+    </div>
+</div>

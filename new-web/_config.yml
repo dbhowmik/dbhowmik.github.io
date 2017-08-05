@@ -1,0 +1,59 @@
+---
+title: Lukas Himsel
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/:month-:day-:year-:title:output_ext"
+    layout: post
+    author: Lukas Himsel
+    gists: false
+safe: false
+markdown: kramdown
+highlighter: rouge
+lsi: false
+permalink: "/:title"
+description: 'Lukas Himsel''s personal website. 17 years old student in Germany, Franconia.
+  Interested in open-source, open-data, modern web development (with AMP, static site
+  generators, following the JAMStack) and music, especially piano music. Blog mostly
+  in german language. '
+baseurl: 
+url: http://himsel.me
+twitter_username: lukashimsel
+github_username: lukas-h
+accent: "#f7f7e6"
+author: Lukas Himsel
+address: Manegoldstraße 11<br>97346 Iphofen, DE
+email: lukas@himsel.me
+tel: "+49 162 363 3551"
+isolang: de
+exclude:
+- LICENSE
+- README.md
+include:
+- ".firebaserc"
+- firebase.json
+replacements:
+- - "<img"
+  - "<amp-img"
+- - alt="" />
+  - ' layout="responsive" height="300px" width="600px"></amp-img>'
+- - "<video"
+  - "<amp-video"
+- - "</video"
+  - "</amp-video"
+- - <script src="https://gist.github.com/lukas-h/
+  - <amp-gist data-gistid="
+- - .js"></script>
+  - '" layout="fixed-height" height="250"></amp-gist>'
+- - id="amp"
+  - id="a-m-p"
