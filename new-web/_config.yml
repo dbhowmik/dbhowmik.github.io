@@ -1,5 +1,5 @@
 ---
-title: Lukas Himsel
+title: Deepayan Bhowmik
 timezone: UTC
 collections:
   posts:
@@ -15,21 +15,18 @@ defaults:
   values:
     permalink: "/:month-:day-:year-:title:output_ext"
     layout: post
-    author: Lukas Himsel
+    author: Deepayan Bhowmik
     gists: false
 safe: false
 markdown: kramdown
 highlighter: rouge
 lsi: false
 permalink: "/:title"
-description: 'Lukas Himsel''s personal website. 17 years old student in Germany, Franconia.
-  Interested in open-source, open-data, modern web development (with AMP, static site
-  generators, following the JAMStack) and music, especially piano music. Blog mostly
-  in german language. '
+description: 'Deepayan Bhowmik''s personal website. 
 baseurl: 
-url: http://himsel.me
-twitter_username: lukashimsel
-github_username: lukas-h
+url: https://dbhowmik.github.io/
+twitter_username: ditunilu
+github_username: dbhowmik
 accent: "#f7f7e6"
 author: Lukas Himsel
 address: Manegoldstraße 11<br>97346 Iphofen, DE
