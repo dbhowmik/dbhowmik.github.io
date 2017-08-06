@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:4000/07-06-2017-Stolpersteine-in-Heilbronn-&-Kitzingen.html</loc>
+    
+    <lastmod>2017-07-06T01:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/07-06-2017-amp-map.html</loc>
+    
+    <lastmod>2017-07-06T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/06-16-2017-timeline-with-jekyll.html</loc>
+    
+    <lastmod>2017-06-16T08:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/06-12-2017-bilderkarussell-amp-carousel-mit-amp-und-jekyll.html</loc>
+    
+    <lastmod>2017-06-12T22:42:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/06-12-2017-categories-archive.html</loc>
+    
+    <lastmod>2017-06-12T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/06-04-2017-Accelerated-Mobile-Pages.html</loc>
+    
+    <lastmod>2017-06-04T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/05-01-2017-jekyll-collection-excerpt.html</loc>
+    
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/04-12-2017-ghpages.html</loc>
+    
+    <lastmod>2017-04-12T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/02-05-2017-Mit-JavaFX-loslegen.html</loc>
+    
+    <lastmod>2017-02-05T10:33:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/11-27-2016-UPnP-in-meinem-Heimnetz.html</loc>
+    
+    <lastmod>2016-11-27T20:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/11-27-2016-Smart-home.html</loc>
+    
+    <lastmod>2016-11-27T19:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/09-26-2016-seiler-neuer%C3%B6ffnung.html</loc>
+    
+    <lastmod>2016-09-26T15:30:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/09-06-2016-markdown-license-badges.html</loc>
+    
+    <lastmod>2016-09-06T11:04:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/09-05-2016-der-deppenapostroph.html</loc>
+    
+    <lastmod>2016-09-05T19:03:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://localhost:4000/404</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/archive</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/atom.xml</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/blog</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/feed.xml</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/imprint</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/sitemap.xml</loc>
+    <lastmod></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+</urlset>

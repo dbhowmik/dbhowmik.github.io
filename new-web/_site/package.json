@@ -1,0 +1,19 @@
+{
+  "name": "lukas-h.github.io",
+  "version": "1.0.0",
+  "description": "Website Lukas Himsel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukas-h/lukas-h.github.io.git"
+  },
+  "author": "Lukas Himsel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukas-h/lukas-h.github.io/issues"
+  },
+  "homepage": "https://github.com/lukas-h/lukas-h.github.io#readme"
+}
