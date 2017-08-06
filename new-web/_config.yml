@@ -51,7 +51,7 @@ replacements:
   - "<amp-video"
 - - "</video"
   - "</amp-video"
-- - <script src="https://dbhowmik.github.io/new-web/
+- - <script src="https://dbhowmik.github.io/
   - <amp-gist data-gistid="
 - - .js"></script>
   - '" layout="fixed-height" height="250"></amp-gist>'
