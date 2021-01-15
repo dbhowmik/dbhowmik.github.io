@@ -94,18 +94,18 @@
 		</style>		
 		
 		<script>
-		function iframeChange() {
-    var buttons = document.querySelector(".loadiframe"),
-        iframe = document.getElementById('frame');
+			function iframeChange() {
+				var buttons = document.querySelector(".loadiframe"),
+				iframe = document.getElementById('frame');
 
-    buttons.addEventListener("click", function (e) {
-        iframe.src = e.target.dataset.src;
-        iframe.width = e.target.dataset.width;
-        iframe.height = e.target.dataset.height;
-    });
-}
-window.onload = iframeChange;
-	</script>
+				buttons.addEventListener("click", function (e) {
+				iframe.src = e.target.dataset.src;
+				iframe.width = e.target.dataset.width;
+				iframe.height = e.target.dataset.height;
+				});
+			}
+			window.onload = iframeChange;
+		</script>
 	</head>
 	
 	<body>		
@@ -131,14 +131,13 @@ window.onload = iframeChange;
 		</header>
 				
 		<main>
-			
+			<div class="loadiframe">
+				<button id="b1" data-src="http://jquery.com/" data-width="500" data-height="400">Button 1</button>
+				<button id="b2" data-src="http://sitepoint.com" data-width="650" data-height="350">Button 2</button>
+			</div>
+
 			<div class="innertube">
-				
-<div class="loadiframe">
-    <button id="b1" data-src="http://jquery.com/" data-width="500" data-height="400">Button 1</button>
-    <button id="b2" data-src="http://sitepoint.com" data-width="650" data-height="350">Button 2</button>
-</div>
-<iframe id='frame' frameborder="0" scrolling="no" width="500" height="400">				
+				<iframe id='frame' frameborder="0" scrolling="no" width="500" height="400">				
 			</div>
 		</main>
 	
