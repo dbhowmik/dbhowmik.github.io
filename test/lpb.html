@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>MARS Data Analytics</title>
+		<style type="text/css">
+		
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		#header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100px; 
+			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+		
+		#logo {
+			padding:10px;
+			float:left;
+		}
+		
+		main {
+			position: fixed;
+			top: 100px; /* Set this to the height of the header */
+			left: 0; 
+			right: 0;
+			bottom: 0;
+			overflow: auto; 
+			background: #fff;
+		}
+		
+		.innertube {
+			margin: 15px; /* Provides padding for the content */
+		}
+		
+		p {
+			color: #555;
+		}
+
+		/* Menu */
+		nav { 
+			margin:0 auto; 
+			padding:0; 
+			float:right;
+		}
+		nav ul { 
+			list-style:none; 
+			padding:0; 
+			float:left;
+		}
+		nav ul li { 
+			margin:0; 
+			padding:0 0 0 8px; 
+			float:left;
+		}
+		nav ul li a { 
+			display:block; 
+			margin:0; 
+			padding:8px 20px; 
+			color:darkgreen; 
+			text-decoration:none;
+		}
+		nav ul li.active a, #top-nav ul li a:hover { 
+			color:#d3d3f9;
+		}
+				
+		/*IE6 fix*/
+		* html body{
+			padding: 100px 0 0 0; /* Set the first value to the height of the header */
+		}
+		
+		* html main{ 
+			height: 100%; 
+			width: 100%; 
+		}
+				
+		.button {
+			border: none;
+			color: white;
+			padding: 8px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.button1 {background-color: #4CAF50;} /* Green */
+		.button2 {background-color: #008CBA;} /* Blue */
+		
+		div {                   
+            font-family: Verdana;
+            padding: 0px;
+            border: 0px solid #000000;      
+        }
+        .txt3 {
+            font-weight: normal;
+                font-size: 100%;
+            font-weight: bold;
+            font-family: Verdana;   
+        }
+        .txt4 {
+            font-weight: normal;
+                font-size: 100%;
+            font-weight: bold;
+            font-family: Verdana;   
+                margin-top: 2px;        
+            margin-left: 0px;
+                color:#000000;
+            border: 2px solid #BC401E;
+        }
+		
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
+	
+	</head>
+	
+	<body>		
+
+		<header id="header">
+			<div id="logo">
+				<img src="logo.png" alt="MARS Logo">				
+			</div>
+			<div id="logo">
+				<h1>MARS Data analytics: LPB</h1>
+			</div>
+			<nav>
+				<div class="innertube">
+				<ul>
+					<li><a href="mars_index.html">Home</a></li>
+					<li><a href="coverage.html">Coverage</a></li>
+					<li><a href="sales.html">Sales</a></li>
+					<li><a href="unbilled.html">Unbilled Outlet</a></li>
+					<li><a href="lpb.html">LPB</a></li>
+					<li><a href="sku.html">SKU</a></li>
+					<li><a href="map.html">Maps</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+				
+		<main> 
+		
+		<script language=javascript>
+                var theSelect,theIframe;
+                var today = new Date(),
+
+            number_of_day = today.getDay();
+                $(document).ready(function() {
+                //var today = new Date();
+                //var n = today.getDay();
+                theSelect = document.getElementById('location');
+                theIframe = document.getElementById('myIframe');
+                theUrl = theSelect.options[0].value;
+                theIframe.src = theUrl;
+            });
+            function setIframeSource() 
+            {
+              var theUrl;
+
+              if ( theSelect.selectedIndex > 0) {
+                  theUrl = theSelect.options[theSelect.selectedIndex].value;
+              } else {
+                  theUrl = theSelect.options[0].value;
+              }
+              theIframe.src = theUrl;
+            }
+            </script>
+            <form id="form1" method="post" style="text-align: center;">
+				<label class="txt3"> Line per bill analysis: <select class="txt4" id="location" onchange="setIframeSource()"> 
+					<option value="analytics/mars_LPB_class_east.html"> LPB Class-wise Analysis (Region: East)</option>
+					<option value="analytics/mars_LPB_class_west.html"> LPB Class-wise Analysis (Region: West)</option>
+					<option value="analytics/mars_LPB_class_north.html"> LPB Class-wise Analysis (Region: North)</option>
+					<option value="analytics/mars_LPB_class_south.html"> LPB Class-wise Analysis (Region: South)</option>
+					<option value="analytics/mars_LPB_state_east.html"> LPB State-wise Analysis (Region: East)</option>
+					<option value="analytics/mars_LPB_state_west.html"> LPB State-wise Analysis (Region: West)</option>
+					<option value="analytics/mars_LPB_state_north.html"> LPB State-wise Analysis (Region: North)</option>
+					<option value="analytics/mars_LPB_state_south.html"> LPB State-wise Analysis (Region: South)</option>
+					</select>
+				</label>
+			</form>
+		<br>
+
+        <iframe id="myIframe" src="analytics/mars_LPB_class_east.html" frameborder="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen scrolling="no"></iframe>
+        
+		<!--
+			<form id="form1" method="post" style="text-align: center;">
+				<label class="txt3"> Line per bill analysis: <select class="txt4" id="location" onchange="setIframeSource()"> 
+					<option value="analytics/mars_LPB_class_east.html"> LPB Class-wise Analysis (Region: East)</option>
+					<option value="analytics/mars_LPB_class_west.html"> LPB Class-wise Analysis (Region: West)</option>
+					<option value="analytics/mars_LPB_class_north.html"> LPB Class-wise Analysis (Region: North)</option>
+					<option value="analytics/mars_LPB_class_south.html"> LPB Class-wise Analysis (Region: South)</option>
+					<option value="analytics/mars_LPB_state_east.html"> LPB State-wise Analysis (Region: East)</option>
+					<option value="analytics/mars_LPB_state_west.html"> LPB Class-wise Analysis (Region: West)</option>
+					<option value="analytics/mars_LPB_state_north.html"> LPB Class-wise Analysis (Region: North)</option>
+					<option value="analytics/mars_LPB_state_south.html"> LPB Class-wise Analysis (Region: South)</option>
+					</select>
+				</label>
+			</form>
+			<br>
+
+			<iframe id="myIframe" src="analytics/mars_LPB_class_east.html" frameborder="0" marginwidth="0" marginheight="0" width="100%" height="600" allowfullscreen scrolling="no" ></iframe>
+			-->
+		</main>
+	
+	</body>
+</html>
