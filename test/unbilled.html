@@ -21,19 +21,19 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100px; 
+			height: 80px; 
 			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
 			background: #BCCE98;
 		}
 		
 		#logo {
-			padding:10px;
+			padding:5px;
 			float:left;
 		}
 		
 		main {
 			position: fixed;
-			top: 100px; /* Set this to the height of the header */
+			top: 80px; /* Set this to the height of the header */
 			left: 0; 
 			right: 0;
 			bottom: 0;
@@ -42,7 +42,7 @@
 		}
 		
 		.innertube {
-			margin: 15px; /* Provides padding for the content */
+			margin: 10px; /* Provides padding for the content */
 		}
 		
 		p {
@@ -75,6 +75,7 @@
 		nav ul li.active a, #top-nav ul li a:hover { 
 			color:#d3d3f9;
 		}
+		
 				
 		/*IE6 fix*/
 		* html body{
@@ -100,7 +101,7 @@
 
 		.button1 {background-color: #4CAF50;} /* Green */
 		.button2 {background-color: #008CBA;} /* Blue */
-		
+				
 		</style>
 
 		<script>
@@ -129,12 +130,12 @@
 				<h3>MARS Data analytics: Unbilled</h3>
 			</div>
 			<nav>
-				<div class="innertube">
+				<div class="nav">
 				<ul>
 					<li><a href="mars_index.html">Home</a></li>
 					<li><a href="coverage.html">Coverage</a></li>
 					<li><a href="sales.html">Sales</a></li>
-					<li><a href="unbilled.html">Unbilled Outlet</a></li>
+					<li><a href="unbilled.html"><u><b>Unbilled Outlet</b></u></a></li>
 					<li><a href="lpb.html">LPB</a></li>
 					<li><a href="vpb.html">VPB</a></li>
 					<li><a href="sku.html">SKU</a></li>
@@ -146,12 +147,12 @@
 				
 		<main> 
 			<div class="loadiframe" style="text-align: center;">
-				<button class="button button1" id="b1" data-src="analytics/ub-outlet-stat.html" data-width="100%" data-height="600">Classwise Billed vs Unbilled Retailers</button>
-				<button class="button button2" id="b2" data-src="analytics/india_map_billed_customers_slider.html" data-width="100%" data-height="600">Statewise Billed vs Unbilled Retailers</button>
+				<button class="button button1" id="b1" data-src="analytics/ub-outlet-stat.html" data-width="100%" data-height="800">Classwise Billed vs Unbilled Retailers</button>
+				<button class="button button2" id="b2" data-src="analytics/india_map_billed_customers_slider.html" data-width="100%" data-height="800">Statewise Billed vs Unbilled Retailers</button>
 				
 			</div>
 			
-			<iframe id='frame' frameborder="0" scrolling="no" width="100%" height="600">
+			<iframe id='frame' frameborder="0" scrolling="no" width="100%" height="800">
 			<!--<iframe src="analytics/india_map_billed_customers.html" width="100%" height="600" style="border:none;">-->
 			</iframe>
 			

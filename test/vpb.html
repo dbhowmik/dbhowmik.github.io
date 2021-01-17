@@ -21,19 +21,19 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100px; 
+			height: 80px; 
 			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
 			background: #BCCE98;
 		}
 		
 		#logo {
-			padding:10px;
+			padding:5px;
 			float:left;
 		}
 		
 		main {
 			position: fixed;
-			top: 100px; /* Set this to the height of the header */
+			top: 80px; /* Set this to the height of the header */
 			left: 0; 
 			right: 0;
 			bottom: 0;
@@ -42,7 +42,7 @@
 		}
 		
 		.innertube {
-			margin: 15px; /* Provides padding for the content */
+			margin: 10px; /* Provides padding for the content */
 		}
 		
 		p {
@@ -94,7 +94,7 @@
 			text-decoration: none;
 			display: inline-block;
 			font-size: 16px;
-			margin: 4px 2px;
+			margin: 2px 2px;
 			cursor: pointer;
 		}
 
@@ -115,6 +115,7 @@
 				});
 			}
 			window.onload = iframeChange;
+			
 		</script>			
 	
 	</head>
@@ -129,14 +130,14 @@
 				<h3>MARS Data analytics: SKU</h3>
 			</div>
 			<nav>
-				<div class="innertube">
+				<div class="nav">
 				<ul>
 					<li><a href="mars_index.html">Home</a></li>
 					<li><a href="coverage.html">Coverage</a></li>
 					<li><a href="sales.html">Sales</a></li>
 					<li><a href="unbilled.html">Unbilled Outlet</a></li>
 					<li><a href="lpb.html">LPB</a></li>
-					<li><a href="vpb.html">VPB</a></li>
+					<li><a href="vpb.html"><u><b>VPB</u></b></a></li>
 					<li><a href="sku.html">SKU</a></li>
 					<li><a href="map.html">Maps</a></li>
 				</ul>
@@ -146,7 +147,7 @@
 				
 		<main> 
 			<div class="loadiframe" style="text-align: center;">
-				<button class="button button1" id="b1" data-src="analytics/india_map_avg_bill_value_customers_slider.html" data-width="100%" data-height="600">Average Bill Value</button>
+				<button class="button button1" id="b1" data-src="analytics/india_map_avg_bill_value_customers_slider.html" data-width="100%" data-height="800">Average Bill Value</button>
 			<!--	<button class="button button2" id="b2" data-src="analytics/india_map_consumers_per_retailer.html" data-width="100%" data-height="600">Cosumer/Retailer</button>
 				<button class="button button1" id="b1" data-src="analytics/india_map_billed_customers_slider.html" data-width="100%" data-height="600">Billed vs Total Retailers</button>
 				<button class="button button2" id="b2" data-src="analytics/india_map_dealers_per_million.html" data-width="100%" data-height="600">Retailer/Million</button>
@@ -154,7 +155,7 @@
 				-->
 			</div>
 			
-			<iframe id='frame' frameborder="0" scrolling="no" width="100%" height="600">
+			<iframe id='frame' frameborder="0" scrolling="no" width="100%" height="800">
 			<!--<iframe src="analytics/india_map_billed_customers.html" width="100%" height="600" style="border:none;">-->
 			</iframe>
 			
