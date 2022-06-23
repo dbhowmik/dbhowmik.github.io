@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Weed Watch Water Quality Data Analytics</title>
+		<style type="text/css">
+		
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%; 
+			max-height: 100%; 
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		#header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 80px; 
+			overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+		
+		#logo {
+			padding:5px;
+			float:left;
+		}
+		
+		main {
+			position: fixed;
+			top: 80px; /* Set this to the height of the header */
+			left: 0; 
+			right: 0;
+			bottom: 0;
+			overflow: auto; 
+			background: #fff;
+		}
+		
+		.innertube {
+			margin: 10px; /* Provides padding for the content */
+		}
+		
+		p {
+			color: #555;
+		}
+
+		/* Menu */
+		nav { 
+			margin:0 auto; 
+			padding:0; 
+			float:right;
+		}
+		nav ul { 
+			list-style:none; 
+			padding:0; 
+			float:left;
+		}
+		nav ul li { 
+			margin:0; 
+			padding:0 0 0 8px; 
+			float:left;
+		}
+		nav ul li a { 
+			display:block; 
+			margin:0; 
+			padding:8px 20px; 
+			color:darkgreen; 
+			text-decoration:none;
+		}
+		nav ul li.active a, #top-nav ul li a:hover { 
+			color:#d3d3f9;
+		}
+				
+		/*IE6 fix*/
+		* html body{
+			padding: 100px 0 0 0; /* Set the first value to the height of the header */
+		}
+		
+		* html main{ 
+			height: 100%; 
+			width: 100%; 
+		}
+				
+		.button {
+			border: none;
+			color: white;
+			padding: 8px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 2px 2px;
+			cursor: pointer;
+		}
+
+		.button1 {background-color: #4CAF50;} /* Green */
+		.button2 {background-color: #008CBA;} /* Blue */
+		
+		div {                   
+            font-family: Verdana;
+            padding: 0px;
+            border: 0px solid #000000;      
+        }
+        .txt3 {
+            font-weight: normal;
+                font-size: 100%;
+            font-weight: bold;
+            font-family: Verdana;   
+        }
+        .txt4 {
+            font-weight: normal;
+                font-size: 100%;
+            font-weight: bold;
+            font-family: Verdana;   
+                margin-top: 2px;        
+            margin-left: 0px;
+                color:#000000;
+            border: 2px solid #BC401E;
+        }
+		
+		</style>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
+	
+	</head>
+	
+	<body>		
+
+		<header id="header">
+			<div id="logo">
+				<img src="logo.png" alt="RAEng Logo">				
+			</div>
+			<div id="logo">
+				<h3>Weed Watch Water Quality Data Analytics</h3>
+			</div>
+			<nav>
+				<div class="nav">
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="date.html">Date wise</a></li>
+					<li><a href="site.html">Site wise</a></li>					
+					<li><a href="weather.html">Weather data</a></li>					
+				</ul>
+				</div>
+			</nav>
+		</header>
+				
+		<main> 
+		
+		<script language=javascript>
+                var theSelect,theIframe;
+                var today = new Date(),
+
+            number_of_day = today.getDay();
+                $(document).ready(function() {
+                //var today = new Date();
+                //var n = today.getDay();
+                theSelect = document.getElementById('location');
+                theIframe = document.getElementById('myIframe');
+                theUrl = theSelect.options[0].value;
+                theIframe.src = theUrl;
+            });
+            function setIframeSource() 
+            {
+              var theUrl;
+
+              if ( theSelect.selectedIndex > 0) {
+                  theUrl = theSelect.options[theSelect.selectedIndex].value;
+              } else {
+                  theUrl = theSelect.options[0].value;
+              }
+              theIframe.src = theUrl;
+            }
+            </script>
+            <form id="form1" method="post" style="text-align: center;">
+				<label class="txt3"> Date-wise water sample analysis: <select class="txt4" id="location" onchange="setIframeSource()"> 
+					<option value="html-date/pH at 25° C.html">pH at 25° C</option>		
+					<option value="html-date/Conductivity at 25° C.html">Conductivity at 25° C</option>
+					<option value="html-date/Total Hardness as CaCO3.html">Total Hardness as CaCO3</option>
+					<option value="html-date/Total Alkalinity as CaCO3.html">Total Alkalinity as CaCO3 </option>
+					<option value="html-date/Calcium as Ca.html">Calcium as Ca</option>
+					<option value="html-date/Magnesium as Mg.html">Magnesium as Mg </option>
+					<option value="html-date/Chloride as Cl.html">Chloride as Cl </option>
+					<option value="html-date/Sodium as Na.html">Sodium as Na </option>
+					<option value="html-date/Ptassium as K.html">Potassium as K </option>
+					<option value="html-date/Sulphate as SO4.html">Sulphate as SO4 </option>
+					<option value="html-date/Nitrate as NO3.html">Nitrate as NO3 </option>
+					<option value="html-date/Ammonia.html">Ammonia </option>
+					<option value="html-date/Total Nitrogen.html">Total Nitrogen </option>
+					<option value="html-date/Phosphates as PO4.html">Phosphates as PO4 </option>
+					<option value="html-date/Chemical Oxygen Demand.html">Chemical Oxygen Demand </option>
+					</select>
+				</label>
+			</form>
+		<br>
+
+        <p align="center"><iframe id="myIframe" src="html-date/pH at 25° C.html" frameborder="0" marginwidth="0" marginheight="0" width="70%" height="600" allowfullscreen scrolling="no"></iframe>
+        
+		</main>
+	
+	</body>
+</html>
