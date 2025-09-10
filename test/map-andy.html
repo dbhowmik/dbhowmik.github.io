@@ -1,0 +1,5639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_021f3d0984bda730780b5afeb1bf6d1f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_021f3d0984bda730780b5afeb1bf6d1f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_021f3d0984bda730780b5afeb1bf6d1f = L.map(
+                "map_021f3d0984bda730780b5afeb1bf6d1f",
+                {
+                    center: [20.10069, 86.02511],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd6c6fabc77617d327b5a74490def67d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fd6c6fabc77617d327b5a74490def67d.addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_be40b3182be90cba3d1b8324a9f0e9cd = L.marker(
+                [20.10069, 86.02511],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_7f5b2aa58820eb1ae64c557c84dc4c46 = L.marker(
+                [20.1001, 86.0266],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_b84c431b094c6fa7842c6192ce55ab6c = L.marker(
+                [20.09847, 86.03015],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_a6d8d282f4ed3e51ab929e90715dfb23 = L.marker(
+                [20.08819, 86.02717],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_b6efe552e4dbe17fa26f00245a240e4b = L.marker(
+                [20.09371, 86.03244],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_a9b56701cf433a6cd86f696e0b6db760 = L.marker(
+                [20.09337, 86.03797],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_3dd9f45efdc406d84a4a3f54ebf37c56 = L.marker(
+                [20.09616, 86.04285],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e2549000b0f8af7a12e17403870a6402 = L.marker(
+                [20.08416, 86.02697],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_946b7191c2b259b9a70ebd37a2ab8051 = L.marker(
+                [20.07865, 86.03128],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_c5351c9b75e4291af82f4ac3240880c5 = L.marker(
+                [20.08197, 86.02707],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_b6f1bcf988b30451ade827cee5bd30b5 = L.marker(
+                [20.07316, 86.03729],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_6b22c5c769397cd8a5779543ab7a6cf7 = L.marker(
+                [20.07579, 86.03797],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_da67cf4827abf52f078ec12576018c5d = L.marker(
+                [20.0782, 86.03272],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9d15c4848bfb141f5daf0bad6268ee0e = L.marker(
+                [20.06773, 860.3807],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_5bf8e4f9363a278e46672761aea2b129 = L.marker(
+                [20.06462, 8602607.0],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e1058addca53d2dec774a9508016de33 = L.marker(
+                [20.07146, 86.01191],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_933380f03af6fb3673f8c1aad968e1af = L.marker(
+                [20.06845, 86.00914],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_ad2113f79fe1e5a907f35796eaf95c81 = L.marker(
+                [20.0693, 86.01054],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_1d2b8a5f5adf5ed57c5a54adf0a3c743 = L.marker(
+                [20.082394, 86.026905],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_5ce1aa265af3eff4708f7e8850b4aecd = L.marker(
+                [20.080892, 86.02745],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_95e5166fcc65284205fa822de2e4a436 = L.marker(
+                [20.078292, 86.024252],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_220274c1958eba586b1e6b3ebb5c217d = L.marker(
+                [20.08469, 86.02602],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_717e6b808660b77d45e30c599a081f92 = L.marker(
+                [20.1098, 85.92204],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_4607554dfd058a47cca426ff2167c140 = L.marker(
+                [20.11185, 85.92307],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_d8bd9286cf25484e34a5d8a4b5dab505 = L.marker(
+                [20.09389, 85.90752],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_51fbfb1180e18a314026bac26ebe3999 = L.marker(
+                [20.09394, 85.90864],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_fc8972ed04f2930f23e4d563dc9b64e5 = L.marker(
+                [20.0995, 85.90132],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_d4d56f77779fd34df81dd2669524a866 = L.marker(
+                [20.09889, 85.90595],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_70ec04a586001a7a24614dc1d11de9ff = L.marker(
+                [20.09892, 85.89492],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e31e1730004b19bfc036a3c5985de2bb = L.marker(
+                [20.09801, 85.89439],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_5b3fd115a8feddba92155be5a39c7a87 = L.marker(
+                [20.09798, 85.89109],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_49ee9ebfe92a2e756e5cd8c0e69029fb = L.marker(
+                [20.09697, 85.89051],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_18fdf89d2b169dd508fc87cee0a6f20a = L.marker(
+                [20.1016, 85.88946],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_76071b1e8f301dcd9c260b7871db8fb8 = L.marker(
+                [20.10152, 85.8895],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_4513a58341c370c2ba4495097b8a72fb = L.marker(
+                [20.11986, 85.90201],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_8c1c879d85a6ace1b703e5e01b24f0b3 = L.marker(
+                [20.11785, 8589999.0],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_f857ec1e7dd2d1c99b0f8507fb8193fa = L.marker(
+                [20.09367, 85.91468],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e649100af7134a6e0cc39867c4506e74 = L.marker(
+                [20.09644, 86.00874],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_794f3b45ffd26e691edc3672a504c567 = L.marker(
+                [20.07427, 86.00208],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_abafc3f5c8e43a01f9fd25f285f2abde = L.marker(
+                [20.08154, 86.00355],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e8c71947ad355f56d56ee06f1e9a3822 = L.marker(
+                [20.08923, 86.00522],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_806d444adec89e5d81984dce03e5c4df = L.marker(
+                [20.06058, 86.00283],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_69aed1d0e7721ef0a556a903f972cee2 = L.marker(
+                [20.09845, 86.00909],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9accb74b0eda1a7ca3c5c1fd6b337663 = L.marker(
+                [20.0024, 86.28322],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_abeed00b5385367da92f60c330c343fa = L.marker(
+                [19.97388, 86.31274],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_c396931ae3d8de5190adaf50dd4ad264 = L.marker(
+                [20.07325, 86.00184],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_f77d98faa072c0d9cb10614f37c32f0a = L.marker(
+                [19.97626, 86.30858],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_b30715adb3dad94948d92ad339ef5e70 = L.marker(
+                [20.00543, 86.29191],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e7ebdbab9bbc3b794cb2a613c31ac365 = L.marker(
+                [20.06433, 86.06017],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_d0c1d6da1981dd6bbffd80732e0af470 = L.marker(
+                [20.06344, 86.0516],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_cb8d8f4338209906a2420d1c3fb516f0 = L.marker(
+                [20.06403, 86.05235],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_66643785ea86805ea5a9ec731be1a76d = L.marker(
+                [20.09846, 86.00912],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_7c574ffa73305422871f9e9e5211a128 = L.marker(
+                [19.99576, 86.27609],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_0dcfd17390d6088b1d06a8e5ac39daf5 = L.marker(
+                [19.9853, 86.27951],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_afa7616021a193cdf6f5b9c01da379ea = L.marker(
+                [19.98444, 86.27804],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_98423f0db66f048d2d4a9e4fb5f2c0d5 = L.marker(
+                [19.98431, 86.27699],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_10da2430a68f7f3c54cc6e9519e83186 = L.marker(
+                [19.98429, 86.27551],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_bb66ea04e0b4b66ce6d3c7f7bfd854f2 = L.marker(
+                [19.98454, 86.27485],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_4c3ce2ecec598c972c4899c3451d63ca = L.marker(
+                [19.98678, 86.26997],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9e9c29ca7321cc7d91cae066c5103e3b = L.marker(
+                [19.98683, 86.27002],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_6e0ec08752ab6e2992200fe6bf5c97c6 = L.marker(
+                [19.98685, 86.27024],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_ef1c1135fefb142191fab8b00cfcfdca = L.marker(
+                [19.98697, 86.27054],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_8fbdaea56de8d4bcd1e7633780375f43 = L.marker(
+                [19.987, 86.27091],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_57967abab832d5e2affd2208bacde2a4 = L.marker(
+                [19.98706, 86.27118],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_08d63ba1de83413ef80234ae22e6eba1 = L.marker(
+                [19.98714, 86.27119],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_3331592b6e495c4001fab2f9b8d5ca79 = L.marker(
+                [19.98026, 86.26942],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_303b6771de49ea5418cc37bbb7b55c82 = L.marker(
+                [19.97996, 86.25916],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9c5fac797a8dbe3809a59133f9877523 = L.marker(
+                [19.98794, 86.25348],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_f46abb0304be61cf2fe544008dc6c298 = L.marker(
+                [19.98815, 86.25296],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_e357641bbe35bca737fae0ae3b525c84 = L.marker(
+                [19.98825, 86.25267],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_25b4a778adcc8342668c9a1f0f7d799a = L.marker(
+                [19.9883, 86.25124],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9084df15710cce7f5bb0b6f151bb4984 = L.marker(
+                [19.98783, 86.25073],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_ca6671c3eadd5f1d556f300dfc740c98 = L.marker(
+                [19.98784, 86.25072],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_fdbe609737a549e871701d70f2193fcb = L.marker(
+                [20.05019, 86.11321],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_32a4a2a949bef1fbbfa7575fc4130f3e = L.marker(
+                [20.05764, 86.09672],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_f2df1e70766b10c0d2c03d38c1cfc8f0 = L.marker(
+                [20.07397, 86.09113],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_214bfdab7b977949d0d7819baa17ad20 = L.marker(
+                [20.09599, 85.83377],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_6e21bfab5d33c3489c001ae2436b5594 = L.marker(
+                [20.07021, 8581462.0],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_62cd53305467a1906e2a0a9cf08fc843 = L.marker(
+                [20.07575, 85.80777],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_02ed7a24fef8f36d7a3dc6bd72077113 = L.marker(
+                [20.07536, 85.80768],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_df95ab1981e1e1cb48b4424a0f259302 = L.marker(
+                [20.0745, 85.80867],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_ca8211d2040b4814557ecba747b0b966 = L.marker(
+                [20.07249, 85.80939],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_fdee212ad5d6d47090e54276e7bb76dc = L.marker(
+                [20.07637, 85.81306],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_6f90da38466ca8a08ed6f993ba3b7b63 = L.marker(
+                [20.07561, 85.81298],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_c0e5ec1670afa5bc66cff529d04b3e7a = L.marker(
+                [20.07961, 85.82265],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_4a524d8ade1f583e1583586d630ad2a8 = L.marker(
+                [20.07924, 85.82984],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_db335bb9d3bacc291f9df2e9cab92c33 = L.marker(
+                [20.0818, 85.83152],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9f6c798e840d3f6914aae052a2b18e9d = L.marker(
+                [20.12711, 85.84003],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_1139c07eb8a064244214ceeced139231 = L.marker(
+                [19.897504, 85.79597],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9b390498dc2e2b1b6aff711cb6051594 = L.marker(
+                [19.885911, 85.722114],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_5813f05e1e731051230296e1f831ccf4 = L.marker(
+                [19.883944, 85.720176],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_60481a232cf6ec01c902bede510eec58 = L.marker(
+                [19.879514, 85.729004],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_5db1d06dc76f1feab7d8047fc68f90b9 = L.marker(
+                [19.865298, 85.701697],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_bc11ea462de84a83e39b77015477bb5d = L.marker(
+                [19.865273, 85.701607],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_bfa5b76666074b21b86788f4933ba906 = L.marker(
+                [19.865129, 85.701487],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_0f740d090573bf5aedcf05e0a4df8dcd = L.marker(
+                [19.89749, 85.81082],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_b6436e472a4ee8006f342197ed101f59 = L.marker(
+                [19.89732, 85.81067],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_3418676888fab9313a06d6dba11d23b1 = L.marker(
+                [19.89262, 85.8072],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_d2e4eac7701f801e85a936ea754c238e = L.marker(
+                [19.88706, 85.81204],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_edb872377e1109fb53545a6c101ec0d3 = L.marker(
+                [19.88871, 85.81716],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_8555ffef1d2eb5edb9e5c93d1254a8d6 = L.marker(
+                [19.87795, 85.81641],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_8141755dfb1d025b43ffcf9590294766 = L.marker(
+                [19.87864, 85.81672],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_79a2e697688a3ee17d2c4f9c2c13447f = L.marker(
+                [19.88962, 85.82096],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_03df0d842b9b6e6e25d440fdf8022690 = L.marker(
+                [19.8884, 85.82151],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_ae66c103c299087b08fe135c8af08e1a = L.marker(
+                [19.8885, 85.82156],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_972cd5bb9e461c9408fd04628a165ce5 = L.marker(
+                [19.88736, 85.82248],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9b06e7d6c07c95acfcc8742256ec3bf7 = L.marker(
+                [19.88779, 85.82349],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_86842ac7cdada3499b5ca79528134181 = L.marker(
+                [19.88793, 85.8237],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_975863680df9f966917760f03b0bdb85 = L.marker(
+                [19.88814, 85.82542],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_876088a979cf4fe33aaacade381c395a = L.marker(
+                [19.88723, 85.82341],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_acdaef88819381e953853bbd9c25cdb6 = L.marker(
+                [19.898822, 85.74362],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9062db766d3299ef1e5de9672eefe1df = L.marker(
+                [19.891364, 85.816552],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_0dc12e817847d6387cd4c6661ac2bd1b = L.marker(
+                [19.93939, 85.82364],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_a8b9f472a065cb0478c1c4e3fbb2520c = L.marker(
+                [19.9361, 85.82516],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_9cf031180b07a5db36446f37dfce1872 = L.marker(
+                [19.94053, 85.82375],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_62ff301c49b7c2a1c6c7e0204b96effb = L.marker(
+                [19.94185, 85.82469],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_c08bf8fd68eff5e9b9f64d273f384edc = L.marker(
+                [19.93712, 85.81943],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_811632dd74be5366e685e3aa2dc148f6 = L.marker(
+                [19.92444, 85.81802],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_8658d28f5461ee9f9e9abeed763a6324 = L.marker(
+                [19.9168, 85.81826],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_5a0d33fed08c935098fcccde6cc5d333 = L.marker(
+                [19.92126, 85.82534],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_b579e461646cc4b9e92395a7dcd22119 = L.marker(
+                [19.91672, 85.81863],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_98ef3ad50b6cf1c01c4ee23c9591406e = L.marker(
+                [19.92674, 85.82382],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_469849ee29b17b260020ce2c2c82fb92 = L.marker(
+                [19.92784, 85.82562],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            tile_layer_fd6c6fabc77617d327b5a74490def67d.addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var marker_dfb2cdc3f421c0bf7faf4e8f834b32d2 = L.marker(
+                [20.10069, 86.02511],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_f7cff931e4f97c8fd8560adbb8fc21ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4acdcb50ec13a5273375c720988d0018 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc5caaf30d9601bf5cf6b9d634dc001e = $(`<div id="html_fc5caaf30d9601bf5cf6b9d634dc001e" style="width: 100.0%; height: 100.0%;">Pond: palasudha, Infestation: algae</div>`)[0];
+                popup_4acdcb50ec13a5273375c720988d0018.setContent(html_fc5caaf30d9601bf5cf6b9d634dc001e);
+            
+        
+
+        marker_dfb2cdc3f421c0bf7faf4e8f834b32d2.bindPopup(popup_4acdcb50ec13a5273375c720988d0018)
+        ;
+
+        
+    
+    
+                marker_dfb2cdc3f421c0bf7faf4e8f834b32d2.setIcon(icon_f7cff931e4f97c8fd8560adbb8fc21ba);
+            
+    
+            var marker_ed3813a6a984f06ceb8ca1008910845a = L.marker(
+                [20.1001, 86.0266],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_513e09876ac4eccb34404bfa965456a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc28b077fc2dbfc31b0e6994a05f11d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cd4b1800ca27a713d210d2f65fee664 = $(`<div id="html_3cd4b1800ca27a713d210d2f65fee664" style="width: 100.0%; height: 100.0%;">Pond: palasudha, Infestation: lotus</div>`)[0];
+                popup_dc28b077fc2dbfc31b0e6994a05f11d0.setContent(html_3cd4b1800ca27a713d210d2f65fee664);
+            
+        
+
+        marker_ed3813a6a984f06ceb8ca1008910845a.bindPopup(popup_dc28b077fc2dbfc31b0e6994a05f11d0)
+        ;
+
+        
+    
+    
+                marker_ed3813a6a984f06ceb8ca1008910845a.setIcon(icon_513e09876ac4eccb34404bfa965456a1);
+            
+    
+            var marker_3e4054c8a5fb74d6d27295a47815ba51 = L.marker(
+                [20.09847, 86.03015],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_cb2ab8ee5e7f3b94d1f69532bc9d3304 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e7a1a9587501c28fe08c6818f77fe11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_836c7b48333b9b804585f340447f0916 = $(`<div id="html_836c7b48333b9b804585f340447f0916" style="width: 100.0%; height: 100.0%;">Pond: bantugram, Infestation: Water hyacinth</div>`)[0];
+                popup_3e7a1a9587501c28fe08c6818f77fe11.setContent(html_836c7b48333b9b804585f340447f0916);
+            
+        
+
+        marker_3e4054c8a5fb74d6d27295a47815ba51.bindPopup(popup_3e7a1a9587501c28fe08c6818f77fe11)
+        ;
+
+        
+    
+    
+                marker_3e4054c8a5fb74d6d27295a47815ba51.setIcon(icon_cb2ab8ee5e7f3b94d1f69532bc9d3304);
+            
+    
+            var marker_4b8340b734b878e1fa5e3e3f30199313 = L.marker(
+                [20.08819, 86.02717],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_2fc1b8d578f1ef1927ea471a722b15f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b7b5dcc79e805bafd3acf6898954c58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc994d0910bc20105100ab994dc0243d = $(`<div id="html_bc994d0910bc20105100ab994dc0243d" style="width: 100.0%; height: 100.0%;">Pond: satapuri, Infestation: Water hyacinth</div>`)[0];
+                popup_2b7b5dcc79e805bafd3acf6898954c58.setContent(html_bc994d0910bc20105100ab994dc0243d);
+            
+        
+
+        marker_4b8340b734b878e1fa5e3e3f30199313.bindPopup(popup_2b7b5dcc79e805bafd3acf6898954c58)
+        ;
+
+        
+    
+    
+                marker_4b8340b734b878e1fa5e3e3f30199313.setIcon(icon_2fc1b8d578f1ef1927ea471a722b15f4);
+            
+    
+            var marker_337625cdbf3819c99f834c08216472ca = L.marker(
+                [20.09371, 86.03244],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_95e0acb5a3f7a1165171bc905a70b5e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf5883fef130ed846722b4b25a24ed20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5667a43790d2817fd37baffaddf0fbc = $(`<div id="html_c5667a43790d2817fd37baffaddf0fbc" style="width: 100.0%; height: 100.0%;">Pond: mitheipur, Infestation: Clear water surface</div>`)[0];
+                popup_cf5883fef130ed846722b4b25a24ed20.setContent(html_c5667a43790d2817fd37baffaddf0fbc);
+            
+        
+
+        marker_337625cdbf3819c99f834c08216472ca.bindPopup(popup_cf5883fef130ed846722b4b25a24ed20)
+        ;
+
+        
+    
+    
+                marker_337625cdbf3819c99f834c08216472ca.setIcon(icon_95e0acb5a3f7a1165171bc905a70b5e2);
+            
+    
+            var marker_6bdb3926e82572ed1cf30d426bc8ee0f = L.marker(
+                [20.09337, 86.03797],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_60b76eaafb9f14cd43e9000f00cb53a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_209e398d600cfb6a5765491f865e7b74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50557b5ae14406b5197def05b91bfce4 = $(`<div id="html_50557b5ae14406b5197def05b91bfce4" style="width: 100.0%; height: 100.0%;">Pond: mitheipur, Infestation: lotus</div>`)[0];
+                popup_209e398d600cfb6a5765491f865e7b74.setContent(html_50557b5ae14406b5197def05b91bfce4);
+            
+        
+
+        marker_6bdb3926e82572ed1cf30d426bc8ee0f.bindPopup(popup_209e398d600cfb6a5765491f865e7b74)
+        ;
+
+        
+    
+    
+                marker_6bdb3926e82572ed1cf30d426bc8ee0f.setIcon(icon_60b76eaafb9f14cd43e9000f00cb53a7);
+            
+    
+            var marker_323b18c9cb9913968c5700a47f5638df = L.marker(
+                [20.09616, 86.04285],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_874c88dc9629e15319b24dff034e5d2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92fd9d640558f3c11dfde1cc632c3453 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7755a59638ea9b94fd38c9a05fd8964b = $(`<div id="html_7755a59638ea9b94fd38c9a05fd8964b" style="width: 100.0%; height: 100.0%;">Pond: mitheipur, Infestation: Clear water surface</div>`)[0];
+                popup_92fd9d640558f3c11dfde1cc632c3453.setContent(html_7755a59638ea9b94fd38c9a05fd8964b);
+            
+        
+
+        marker_323b18c9cb9913968c5700a47f5638df.bindPopup(popup_92fd9d640558f3c11dfde1cc632c3453)
+        ;
+
+        
+    
+    
+                marker_323b18c9cb9913968c5700a47f5638df.setIcon(icon_874c88dc9629e15319b24dff034e5d2a);
+            
+    
+            var marker_5a7dbc6315e69f9c9483ff70dffb58d1 = L.marker(
+                [20.08416, 86.02697],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_3bcd109bbcaa8619fce8cf4ff9a448d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9b3ffdc8e249e20ccc86aaf173b03d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e04ddfa1e920cb30fcf106bf1fa9ccb = $(`<div id="html_3e04ddfa1e920cb30fcf106bf1fa9ccb" style="width: 100.0%; height: 100.0%;">Pond: bhiligram, Infestation: Clear water surface</div>`)[0];
+                popup_f9b3ffdc8e249e20ccc86aaf173b03d9.setContent(html_3e04ddfa1e920cb30fcf106bf1fa9ccb);
+            
+        
+
+        marker_5a7dbc6315e69f9c9483ff70dffb58d1.bindPopup(popup_f9b3ffdc8e249e20ccc86aaf173b03d9)
+        ;
+
+        
+    
+    
+                marker_5a7dbc6315e69f9c9483ff70dffb58d1.setIcon(icon_3bcd109bbcaa8619fce8cf4ff9a448d8);
+            
+    
+            var marker_ff400e9a4daf2a923273d752e81d0489 = L.marker(
+                [20.07865, 86.03128],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_129b04a0df2f38463f1444ac695a9a09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5c71d67659d6129198dc1999e114eb6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c860cba5691bf5f1930990480863123f = $(`<div id="html_c860cba5691bf5f1930990480863123f" style="width: 100.0%; height: 100.0%;">Pond: bhiligram, Infestation: Water hyacinth</div>`)[0];
+                popup_5c71d67659d6129198dc1999e114eb6c.setContent(html_c860cba5691bf5f1930990480863123f);
+            
+        
+
+        marker_ff400e9a4daf2a923273d752e81d0489.bindPopup(popup_5c71d67659d6129198dc1999e114eb6c)
+        ;
+
+        
+    
+    
+                marker_ff400e9a4daf2a923273d752e81d0489.setIcon(icon_129b04a0df2f38463f1444ac695a9a09);
+            
+    
+            var marker_cec958ffb2bf220c01ab3093784ceb9a = L.marker(
+                [20.08197, 86.02707],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_544c1e912efec828d5eacdc3a1602441 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6ee810a42acddb572c1cfdfbdde837a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9093be696a80fe2b3a4801c8a7a4e2f0 = $(`<div id="html_9093be696a80fe2b3a4801c8a7a4e2f0" style="width: 100.0%; height: 100.0%;">Pond: bhiligram, Infestation: Clear water surface</div>`)[0];
+                popup_c6ee810a42acddb572c1cfdfbdde837a.setContent(html_9093be696a80fe2b3a4801c8a7a4e2f0);
+            
+        
+
+        marker_cec958ffb2bf220c01ab3093784ceb9a.bindPopup(popup_c6ee810a42acddb572c1cfdfbdde837a)
+        ;
+
+        
+    
+    
+                marker_cec958ffb2bf220c01ab3093784ceb9a.setIcon(icon_544c1e912efec828d5eacdc3a1602441);
+            
+    
+            var marker_aa6bb416179aafb50f9db04aae8efbba = L.marker(
+                [20.07316, 86.03729],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_e3a7b32d48ad6e502b3695b940a8c86f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7ec5eff85f5c33bf54c13d772f81b28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82707e6e47847a714dd9293d4214e3d7 = $(`<div id="html_82707e6e47847a714dd9293d4214e3d7" style="width: 100.0%; height: 100.0%;">Pond: bhilideuli, Infestation: unknown species</div>`)[0];
+                popup_b7ec5eff85f5c33bf54c13d772f81b28.setContent(html_82707e6e47847a714dd9293d4214e3d7);
+            
+        
+
+        marker_aa6bb416179aafb50f9db04aae8efbba.bindPopup(popup_b7ec5eff85f5c33bf54c13d772f81b28)
+        ;
+
+        
+    
+    
+                marker_aa6bb416179aafb50f9db04aae8efbba.setIcon(icon_e3a7b32d48ad6e502b3695b940a8c86f);
+            
+    
+            var marker_c9a0e30528d7ee8d6c2896865cdf11a3 = L.marker(
+                [20.07579, 86.03797],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_44f1b59f19077363295dd3696e2339d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6066983c36c294fda4518249100bd17e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cc76c2cd6c50afd7891b22cc875c956 = $(`<div id="html_9cc76c2cd6c50afd7891b22cc875c956" style="width: 100.0%; height: 100.0%;">Pond: bhiligram, Infestation: Duckweed</div>`)[0];
+                popup_6066983c36c294fda4518249100bd17e.setContent(html_9cc76c2cd6c50afd7891b22cc875c956);
+            
+        
+
+        marker_c9a0e30528d7ee8d6c2896865cdf11a3.bindPopup(popup_6066983c36c294fda4518249100bd17e)
+        ;
+
+        
+    
+    
+                marker_c9a0e30528d7ee8d6c2896865cdf11a3.setIcon(icon_44f1b59f19077363295dd3696e2339d8);
+            
+    
+            var marker_38e56237ffdf3ab7c5b25681464f40cf = L.marker(
+                [20.0782, 86.03272],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1ce38be20825afe6e248234615211ec8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5491ee159765320b02e9c692139b15cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cfef63266894c1c9d20d8e6b5a113cd = $(`<div id="html_0cfef63266894c1c9d20d8e6b5a113cd" style="width: 100.0%; height: 100.0%;">Pond: bhilideuli, Infestation: Clear water surface</div>`)[0];
+                popup_5491ee159765320b02e9c692139b15cd.setContent(html_0cfef63266894c1c9d20d8e6b5a113cd);
+            
+        
+
+        marker_38e56237ffdf3ab7c5b25681464f40cf.bindPopup(popup_5491ee159765320b02e9c692139b15cd)
+        ;
+
+        
+    
+    
+                marker_38e56237ffdf3ab7c5b25681464f40cf.setIcon(icon_1ce38be20825afe6e248234615211ec8);
+            
+    
+            var marker_1d0a9bf1f0d13a9822a9397473c79b1d = L.marker(
+                [20.06773, 860.3807],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_f1b585ebf30ae935b8ca31155fb308f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70a23ac35ae0890a4d2c564c79a32883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_702c3c8d0fc6b86c597f5a476dc47844 = $(`<div id="html_702c3c8d0fc6b86c597f5a476dc47844" style="width: 100.0%; height: 100.0%;">Pond: bhiligram, Infestation: Duckweed</div>`)[0];
+                popup_70a23ac35ae0890a4d2c564c79a32883.setContent(html_702c3c8d0fc6b86c597f5a476dc47844);
+            
+        
+
+        marker_1d0a9bf1f0d13a9822a9397473c79b1d.bindPopup(popup_70a23ac35ae0890a4d2c564c79a32883)
+        ;
+
+        
+    
+    
+                marker_1d0a9bf1f0d13a9822a9397473c79b1d.setIcon(icon_f1b585ebf30ae935b8ca31155fb308f4);
+            
+    
+            var marker_20d8e5b000813b370b4e17c88a3a5406 = L.marker(
+                [20.06462, 8602607.0],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1d04b9cd8e18cb9e904ebf9ab6e4c5a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_49a8947cb2e6b88eed7eb1df7de3ec78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_feff9cfe59a074ff1c9c12cbdad1a6ab = $(`<div id="html_feff9cfe59a074ff1c9c12cbdad1a6ab" style="width: 100.0%; height: 100.0%;">Pond: nimapara, Infestation: Water hyacinth</div>`)[0];
+                popup_49a8947cb2e6b88eed7eb1df7de3ec78.setContent(html_feff9cfe59a074ff1c9c12cbdad1a6ab);
+            
+        
+
+        marker_20d8e5b000813b370b4e17c88a3a5406.bindPopup(popup_49a8947cb2e6b88eed7eb1df7de3ec78)
+        ;
+
+        
+    
+    
+                marker_20d8e5b000813b370b4e17c88a3a5406.setIcon(icon_1d04b9cd8e18cb9e904ebf9ab6e4c5a5);
+            
+    
+            var marker_23941aefef61b91c2386a264348eefe4 = L.marker(
+                [20.07146, 86.01191],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0f5477d7986a376e50196919afd9de89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a362f80d6861f7760942fc2542859a73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5251a9f3cdcda6768b30c137d01d77ed = $(`<div id="html_5251a9f3cdcda6768b30c137d01d77ed" style="width: 100.0%; height: 100.0%;">Pond: bishnupur, Infestation: Water hyacinth</div>`)[0];
+                popup_a362f80d6861f7760942fc2542859a73.setContent(html_5251a9f3cdcda6768b30c137d01d77ed);
+            
+        
+
+        marker_23941aefef61b91c2386a264348eefe4.bindPopup(popup_a362f80d6861f7760942fc2542859a73)
+        ;
+
+        
+    
+    
+                marker_23941aefef61b91c2386a264348eefe4.setIcon(icon_0f5477d7986a376e50196919afd9de89);
+            
+    
+            var marker_a0801a57e88e544354ea8ef437f8d418 = L.marker(
+                [20.06845, 86.00914],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_5a7dce0127b06ef01f02218842fe8801 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2cf1e34be47c41f5838478786fb71fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cb59209f80eb91bb1ed43b5f8776155 = $(`<div id="html_9cb59209f80eb91bb1ed43b5f8776155" style="width: 100.0%; height: 100.0%;">Pond: bishnupur, Infestation: Duckweed</div>`)[0];
+                popup_e2cf1e34be47c41f5838478786fb71fa.setContent(html_9cb59209f80eb91bb1ed43b5f8776155);
+            
+        
+
+        marker_a0801a57e88e544354ea8ef437f8d418.bindPopup(popup_e2cf1e34be47c41f5838478786fb71fa)
+        ;
+
+        
+    
+    
+                marker_a0801a57e88e544354ea8ef437f8d418.setIcon(icon_5a7dce0127b06ef01f02218842fe8801);
+            
+    
+            var marker_4fa3d92bbe05bf1f0af75dbc98cf64ba = L.marker(
+                [20.0693, 86.01054],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_d76bb9747d85dbdd44ce59a6911aea47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a88fe96d349918c99fafdb16382016f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a3cfef7a80434d1bfe10e5de4cea83a = $(`<div id="html_0a3cfef7a80434d1bfe10e5de4cea83a" style="width: 100.0%; height: 100.0%;">Pond: bishnupur, Infestation: Water hyacinth</div>`)[0];
+                popup_4a88fe96d349918c99fafdb16382016f.setContent(html_0a3cfef7a80434d1bfe10e5de4cea83a);
+            
+        
+
+        marker_4fa3d92bbe05bf1f0af75dbc98cf64ba.bindPopup(popup_4a88fe96d349918c99fafdb16382016f)
+        ;
+
+        
+    
+    
+                marker_4fa3d92bbe05bf1f0af75dbc98cf64ba.setIcon(icon_d76bb9747d85dbdd44ce59a6911aea47);
+            
+    
+            var marker_0ee1f20053fa5c7423b8e4d64371c00e = L.marker(
+                [20.082394, 86.026905],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_3338c92ced591b2bd99ff7794c2410b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3a04f70a90c0ad066463a1976b5ad9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17fb4af641b06d0e4eaa5711c65a2fbe = $(`<div id="html_17fb4af641b06d0e4eaa5711c65a2fbe" style="width: 100.0%; height: 100.0%;">Pond: arjunpur, Infestation: Water hyacinth</div>`)[0];
+                popup_b3a04f70a90c0ad066463a1976b5ad9e.setContent(html_17fb4af641b06d0e4eaa5711c65a2fbe);
+            
+        
+
+        marker_0ee1f20053fa5c7423b8e4d64371c00e.bindPopup(popup_b3a04f70a90c0ad066463a1976b5ad9e)
+        ;
+
+        
+    
+    
+                marker_0ee1f20053fa5c7423b8e4d64371c00e.setIcon(icon_3338c92ced591b2bd99ff7794c2410b8);
+            
+    
+            var marker_b92d8f6b85a52402564e84c7322e1c4d = L.marker(
+                [20.080892, 86.02745],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_e07123a5a59bdea11590ca022dabc436 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec1a9bce593c1f5c804430f813d3cbcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca2d60516e74824d4150a0a5c6f4a0c8 = $(`<div id="html_ca2d60516e74824d4150a0a5c6f4a0c8" style="width: 100.0%; height: 100.0%;">Pond: bhiligram, Infestation: Water hyacinth</div>`)[0];
+                popup_ec1a9bce593c1f5c804430f813d3cbcc.setContent(html_ca2d60516e74824d4150a0a5c6f4a0c8);
+            
+        
+
+        marker_b92d8f6b85a52402564e84c7322e1c4d.bindPopup(popup_ec1a9bce593c1f5c804430f813d3cbcc)
+        ;
+
+        
+    
+    
+                marker_b92d8f6b85a52402564e84c7322e1c4d.setIcon(icon_e07123a5a59bdea11590ca022dabc436);
+            
+    
+            var marker_faf4002cf0ad2cb3bcf1951d3c5fea05 = L.marker(
+                [20.078292, 86.024252],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_623c440bf4990907d3bcb3a3a00bf978 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7551d2b09ba4ddf8de756e5cede2208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d05381c52646512796f12583839c937 = $(`<div id="html_9d05381c52646512796f12583839c937" style="width: 100.0%; height: 100.0%;">Pond: arjunpur, Infestation: Water hyacinth</div>`)[0];
+                popup_f7551d2b09ba4ddf8de756e5cede2208.setContent(html_9d05381c52646512796f12583839c937);
+            
+        
+
+        marker_faf4002cf0ad2cb3bcf1951d3c5fea05.bindPopup(popup_f7551d2b09ba4ddf8de756e5cede2208)
+        ;
+
+        
+    
+    
+                marker_faf4002cf0ad2cb3bcf1951d3c5fea05.setIcon(icon_623c440bf4990907d3bcb3a3a00bf978);
+            
+    
+            var marker_32c9343e9bfc2600562e2d3dfdff6d6f = L.marker(
+                [20.08469, 86.02602],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a8d7ae2ecff42e297bfd6a5e9692ed01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2e9e6d2995813e2db42499406dd7326 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e49196c18efc15afd54936055c58fc4f = $(`<div id="html_e49196c18efc15afd54936055c58fc4f" style="width: 100.0%; height: 100.0%;">Pond: arjunpur, Infestation: Duckweed</div>`)[0];
+                popup_f2e9e6d2995813e2db42499406dd7326.setContent(html_e49196c18efc15afd54936055c58fc4f);
+            
+        
+
+        marker_32c9343e9bfc2600562e2d3dfdff6d6f.bindPopup(popup_f2e9e6d2995813e2db42499406dd7326)
+        ;
+
+        
+    
+    
+                marker_32c9343e9bfc2600562e2d3dfdff6d6f.setIcon(icon_a8d7ae2ecff42e297bfd6a5e9692ed01);
+            
+    
+            var marker_c30396fc153a85cf3e509a648363d9d5 = L.marker(
+                [20.1098, 85.92204],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_74f6644b66747a75b29f69745cd45e60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2078ef2e95150f2fcd8658f9ce5a2207 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46b9a76e263f0d977962927aa0e28093 = $(`<div id="html_46b9a76e263f0d977962927aa0e28093" style="width: 100.0%; height: 100.0%;">Pond: raid bazar, Infestation: Clear water surface</div>`)[0];
+                popup_2078ef2e95150f2fcd8658f9ce5a2207.setContent(html_46b9a76e263f0d977962927aa0e28093);
+            
+        
+
+        marker_c30396fc153a85cf3e509a648363d9d5.bindPopup(popup_2078ef2e95150f2fcd8658f9ce5a2207)
+        ;
+
+        
+    
+    
+                marker_c30396fc153a85cf3e509a648363d9d5.setIcon(icon_74f6644b66747a75b29f69745cd45e60);
+            
+    
+            var marker_64577da7115efd308e6258f8f7d69dc0 = L.marker(
+                [20.11185, 85.92307],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_885bd7e292e47d99c16886edc777db97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d664dc342f46e96a2c1761ae7b04161 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5d3bd9c057ba50c9d979fa28875b6f8 = $(`<div id="html_e5d3bd9c057ba50c9d979fa28875b6f8" style="width: 100.0%; height: 100.0%;">Pond: raid bazar, Infestation: Duckweed</div>`)[0];
+                popup_8d664dc342f46e96a2c1761ae7b04161.setContent(html_e5d3bd9c057ba50c9d979fa28875b6f8);
+            
+        
+
+        marker_64577da7115efd308e6258f8f7d69dc0.bindPopup(popup_8d664dc342f46e96a2c1761ae7b04161)
+        ;
+
+        
+    
+    
+                marker_64577da7115efd308e6258f8f7d69dc0.setIcon(icon_885bd7e292e47d99c16886edc777db97);
+            
+    
+            var marker_6c6f3798e13ab79fb319dbd08d9ddacc = L.marker(
+                [20.09389, 85.90752],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_771c05a0911bf6f5a6823f33a249785e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a487c4d7e8b4c89d12eff67baf2a0a1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06fda1fde94faed52e490e4cddfabdfa = $(`<div id="html_06fda1fde94faed52e490e4cddfabdfa" style="width: 100.0%; height: 100.0%;">Pond: Khelar , Infestation: Water hyacinth</div>`)[0];
+                popup_a487c4d7e8b4c89d12eff67baf2a0a1d.setContent(html_06fda1fde94faed52e490e4cddfabdfa);
+            
+        
+
+        marker_6c6f3798e13ab79fb319dbd08d9ddacc.bindPopup(popup_a487c4d7e8b4c89d12eff67baf2a0a1d)
+        ;
+
+        
+    
+    
+                marker_6c6f3798e13ab79fb319dbd08d9ddacc.setIcon(icon_771c05a0911bf6f5a6823f33a249785e);
+            
+    
+            var marker_0243c06353abf262f74767301dc7b2a4 = L.marker(
+                [20.09394, 85.90864],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_fa41167b3b9a50ba81b7cdf27c2b5011 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f18db04f3bdd0a73c250b17eb1bdfb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79e720f87b558385a7fed815eda31625 = $(`<div id="html_79e720f87b558385a7fed815eda31625" style="width: 100.0%; height: 100.0%;">Pond: Khelar , Infestation: Water hyacinth</div>`)[0];
+                popup_6f18db04f3bdd0a73c250b17eb1bdfb2.setContent(html_79e720f87b558385a7fed815eda31625);
+            
+        
+
+        marker_0243c06353abf262f74767301dc7b2a4.bindPopup(popup_6f18db04f3bdd0a73c250b17eb1bdfb2)
+        ;
+
+        
+    
+    
+                marker_0243c06353abf262f74767301dc7b2a4.setIcon(icon_fa41167b3b9a50ba81b7cdf27c2b5011);
+            
+    
+            var marker_091e0fe82bf3fa4e2c8932b919045548 = L.marker(
+                [20.0995, 85.90132],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_f79c223c1e34113e9575d8b1479acdc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48da566777454b28ed6c4c5f25f4e736 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8baf4e9cf601d87fb4c54db4b3f2b4f = $(`<div id="html_a8baf4e9cf601d87fb4c54db4b3f2b4f" style="width: 100.0%; height: 100.0%;">Pond: Rench sasan, Infestation: Clear water surface</div>`)[0];
+                popup_48da566777454b28ed6c4c5f25f4e736.setContent(html_a8baf4e9cf601d87fb4c54db4b3f2b4f);
+            
+        
+
+        marker_091e0fe82bf3fa4e2c8932b919045548.bindPopup(popup_48da566777454b28ed6c4c5f25f4e736)
+        ;
+
+        
+    
+    
+                marker_091e0fe82bf3fa4e2c8932b919045548.setIcon(icon_f79c223c1e34113e9575d8b1479acdc8);
+            
+    
+            var marker_8cb3195b08adda84d5ef3d61cc6b6105 = L.marker(
+                [20.09889, 85.90595],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_2f534e0b6f6dc056cba8aae1024f5faf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_950d0f5e195474deeacf123aa5440eae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55326b791dc31783eae31b701a12e459 = $(`<div id="html_55326b791dc31783eae31b701a12e459" style="width: 100.0%; height: 100.0%;">Pond: Rench sasan, Infestation: Water hyacinth</div>`)[0];
+                popup_950d0f5e195474deeacf123aa5440eae.setContent(html_55326b791dc31783eae31b701a12e459);
+            
+        
+
+        marker_8cb3195b08adda84d5ef3d61cc6b6105.bindPopup(popup_950d0f5e195474deeacf123aa5440eae)
+        ;
+
+        
+    
+    
+                marker_8cb3195b08adda84d5ef3d61cc6b6105.setIcon(icon_2f534e0b6f6dc056cba8aae1024f5faf);
+            
+    
+            var marker_e71c58110bcefec8328140bb6f1fee7d = L.marker(
+                [20.09892, 85.89492],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0cf909149797442e2e017306418291fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed0254af99d1c65003a0746317cfacd6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6bce6ff84637fa328429e95a1ea3730 = $(`<div id="html_c6bce6ff84637fa328429e95a1ea3730" style="width: 100.0%; height: 100.0%;">Pond: bhanpur, Infestation: Clear water surface</div>`)[0];
+                popup_ed0254af99d1c65003a0746317cfacd6.setContent(html_c6bce6ff84637fa328429e95a1ea3730);
+            
+        
+
+        marker_e71c58110bcefec8328140bb6f1fee7d.bindPopup(popup_ed0254af99d1c65003a0746317cfacd6)
+        ;
+
+        
+    
+    
+                marker_e71c58110bcefec8328140bb6f1fee7d.setIcon(icon_0cf909149797442e2e017306418291fa);
+            
+    
+            var marker_e8b98e8cc27f545ac0394fd682c3bc0d = L.marker(
+                [20.09801, 85.89439],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a56c838d293120f0c3b892429341a211 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9df51080bfbd0e3331a787748e2706a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_872bd7919c20da717b361c98197a715c = $(`<div id="html_872bd7919c20da717b361c98197a715c" style="width: 100.0%; height: 100.0%;">Pond: bhanpur, Infestation: water lettuce</div>`)[0];
+                popup_f9df51080bfbd0e3331a787748e2706a.setContent(html_872bd7919c20da717b361c98197a715c);
+            
+        
+
+        marker_e8b98e8cc27f545ac0394fd682c3bc0d.bindPopup(popup_f9df51080bfbd0e3331a787748e2706a)
+        ;
+
+        
+    
+    
+                marker_e8b98e8cc27f545ac0394fd682c3bc0d.setIcon(icon_a56c838d293120f0c3b892429341a211);
+            
+    
+            var marker_ac2bb476c26088240844d566efefa57e = L.marker(
+                [20.09798, 85.89109],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_6e4f212903077032e092552930bb6d6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da462b1195b291889abf239306a4cc42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd4fdaf86f6cc4067bc7ef6632628faa = $(`<div id="html_fd4fdaf86f6cc4067bc7ef6632628faa" style="width: 100.0%; height: 100.0%;">Pond: bhanpur, Infestation: Duckweed</div>`)[0];
+                popup_da462b1195b291889abf239306a4cc42.setContent(html_fd4fdaf86f6cc4067bc7ef6632628faa);
+            
+        
+
+        marker_ac2bb476c26088240844d566efefa57e.bindPopup(popup_da462b1195b291889abf239306a4cc42)
+        ;
+
+        
+    
+    
+                marker_ac2bb476c26088240844d566efefa57e.setIcon(icon_6e4f212903077032e092552930bb6d6b);
+            
+    
+            var marker_60a24893f5ac6e1ea20998af263bdb2e = L.marker(
+                [20.09697, 85.89051],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0a1048bc48bcf35f22cc0257625a1738 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae3ac53b8f4373d6686076f0900527dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86b40f318b85e2b5b0b90ab2fa0564ea = $(`<div id="html_86b40f318b85e2b5b0b90ab2fa0564ea" style="width: 100.0%; height: 100.0%;">Pond: bhanpur, Infestation: Clear water surface</div>`)[0];
+                popup_ae3ac53b8f4373d6686076f0900527dd.setContent(html_86b40f318b85e2b5b0b90ab2fa0564ea);
+            
+        
+
+        marker_60a24893f5ac6e1ea20998af263bdb2e.bindPopup(popup_ae3ac53b8f4373d6686076f0900527dd)
+        ;
+
+        
+    
+    
+                marker_60a24893f5ac6e1ea20998af263bdb2e.setIcon(icon_0a1048bc48bcf35f22cc0257625a1738);
+            
+    
+            var marker_e6378f8281baa40d8df6a5970b14c428 = L.marker(
+                [20.1016, 85.88946],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_37d9cb58b4a865f00b9fe4cca12ba6d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2fbe01d0184d1e7218428784be979e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69d8568b790c73f357f17a4e829f1b02 = $(`<div id="html_69d8568b790c73f357f17a4e829f1b02" style="width: 100.0%; height: 100.0%;">Pond: Dala bhanpur, Infestation: Duckweed</div>`)[0];
+                popup_c2fbe01d0184d1e7218428784be979e3.setContent(html_69d8568b790c73f357f17a4e829f1b02);
+            
+        
+
+        marker_e6378f8281baa40d8df6a5970b14c428.bindPopup(popup_c2fbe01d0184d1e7218428784be979e3)
+        ;
+
+        
+    
+    
+                marker_e6378f8281baa40d8df6a5970b14c428.setIcon(icon_37d9cb58b4a865f00b9fe4cca12ba6d2);
+            
+    
+            var marker_828dc4106d77756119b47364296d5e69 = L.marker(
+                [20.10152, 85.8895],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_72a029e45098330a05bc31bab3bac339 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d929d2a3eda34ecb8c3527bb34ff74b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78d6573fd98fe8405ca262512caa1af9 = $(`<div id="html_78d6573fd98fe8405ca262512caa1af9" style="width: 100.0%; height: 100.0%;">Pond: Dala bhanpur, Infestation: Clear water surface</div>`)[0];
+                popup_d929d2a3eda34ecb8c3527bb34ff74b6.setContent(html_78d6573fd98fe8405ca262512caa1af9);
+            
+        
+
+        marker_828dc4106d77756119b47364296d5e69.bindPopup(popup_d929d2a3eda34ecb8c3527bb34ff74b6)
+        ;
+
+        
+    
+    
+                marker_828dc4106d77756119b47364296d5e69.setIcon(icon_72a029e45098330a05bc31bab3bac339);
+            
+    
+            var marker_990c678f3a775a42b258e8c8de89ef17 = L.marker(
+                [20.11986, 85.90201],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_07ba11f45958ac38b72b8f48be3e32f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01ca53726ab1c1d1f7909c69052b34db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38131b9f38d208923d3fe6f8c4e99992 = $(`<div id="html_38131b9f38d208923d3fe6f8c4e99992" style="width: 100.0%; height: 100.0%;">Pond: Puru sandha, Infestation: Water hyacinth</div>`)[0];
+                popup_01ca53726ab1c1d1f7909c69052b34db.setContent(html_38131b9f38d208923d3fe6f8c4e99992);
+            
+        
+
+        marker_990c678f3a775a42b258e8c8de89ef17.bindPopup(popup_01ca53726ab1c1d1f7909c69052b34db)
+        ;
+
+        
+    
+    
+                marker_990c678f3a775a42b258e8c8de89ef17.setIcon(icon_07ba11f45958ac38b72b8f48be3e32f8);
+            
+    
+            var marker_e083b043974d9d0e9a8bbbc1799e3de0 = L.marker(
+                [20.11785, 8589999.0],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_14b06550680ac13dcd8b559ab7726962 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c923419dfa957f9702d521cab8e63258 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20f52acf4d348786733bd2c1ba6859b2 = $(`<div id="html_20f52acf4d348786733bd2c1ba6859b2" style="width: 100.0%; height: 100.0%;">Pond: Puru sandha, Infestation: Clear water surface</div>`)[0];
+                popup_c923419dfa957f9702d521cab8e63258.setContent(html_20f52acf4d348786733bd2c1ba6859b2);
+            
+        
+
+        marker_e083b043974d9d0e9a8bbbc1799e3de0.bindPopup(popup_c923419dfa957f9702d521cab8e63258)
+        ;
+
+        
+    
+    
+                marker_e083b043974d9d0e9a8bbbc1799e3de0.setIcon(icon_14b06550680ac13dcd8b559ab7726962);
+            
+    
+            var marker_5345f68299c27e13b6c80b52448c9bff = L.marker(
+                [20.09367, 85.91468],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_303e4a3ba8d1a37b976283545d5e107b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba5f21b3381948ef4354e22d49024663 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8efd617671422d517b7df9b4bad2cccd = $(`<div id="html_8efd617671422d517b7df9b4bad2cccd" style="width: 100.0%; height: 100.0%;">Pond: Harispur, Infestation: Water hyacinth</div>`)[0];
+                popup_ba5f21b3381948ef4354e22d49024663.setContent(html_8efd617671422d517b7df9b4bad2cccd);
+            
+        
+
+        marker_5345f68299c27e13b6c80b52448c9bff.bindPopup(popup_ba5f21b3381948ef4354e22d49024663)
+        ;
+
+        
+    
+    
+                marker_5345f68299c27e13b6c80b52448c9bff.setIcon(icon_303e4a3ba8d1a37b976283545d5e107b);
+            
+    
+            var marker_a6d34d36ba6058c29fafe74fd42e242e = L.marker(
+                [20.09644, 86.00874],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_2039fd5fe9e4394435320725a88a1abd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d3b1fd349974c743628a3b9f41bfb1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2539fafed545cfbfaf64ab25df9e79be = $(`<div id="html_2539fafed545cfbfaf64ab25df9e79be" style="width: 100.0%; height: 100.0%;">Pond: Chennua, Infestation: Clear water surface</div>`)[0];
+                popup_3d3b1fd349974c743628a3b9f41bfb1d.setContent(html_2539fafed545cfbfaf64ab25df9e79be);
+            
+        
+
+        marker_a6d34d36ba6058c29fafe74fd42e242e.bindPopup(popup_3d3b1fd349974c743628a3b9f41bfb1d)
+        ;
+
+        
+    
+    
+                marker_a6d34d36ba6058c29fafe74fd42e242e.setIcon(icon_2039fd5fe9e4394435320725a88a1abd);
+            
+    
+            var marker_289f9bdb460f68bcb745d762e7b097c3 = L.marker(
+                [20.07427, 86.00208],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1287912ed5073719b011059d4c847856 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59a25718f4e7d4f257396418a3a52610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3aceffbac84d2044ecf172968d55b89b = $(`<div id="html_3aceffbac84d2044ecf172968d55b89b" style="width: 100.0%; height: 100.0%;">Pond: Chennua, Infestation: Clear water surface</div>`)[0];
+                popup_59a25718f4e7d4f257396418a3a52610.setContent(html_3aceffbac84d2044ecf172968d55b89b);
+            
+        
+
+        marker_289f9bdb460f68bcb745d762e7b097c3.bindPopup(popup_59a25718f4e7d4f257396418a3a52610)
+        ;
+
+        
+    
+    
+                marker_289f9bdb460f68bcb745d762e7b097c3.setIcon(icon_1287912ed5073719b011059d4c847856);
+            
+    
+            var marker_c3b85e7de968cb21487cda880f488fea = L.marker(
+                [20.08154, 86.00355],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_cb6368dae64e6f8924826b04054cd008 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e384e9098ee254b93d22a7a64bc51557 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa3ae70ef2bef2db3fbc8c50bd3b48e7 = $(`<div id="html_fa3ae70ef2bef2db3fbc8c50bd3b48e7" style="width: 100.0%; height: 100.0%;">Pond: Chennua, Infestation: Clear water surface</div>`)[0];
+                popup_e384e9098ee254b93d22a7a64bc51557.setContent(html_fa3ae70ef2bef2db3fbc8c50bd3b48e7);
+            
+        
+
+        marker_c3b85e7de968cb21487cda880f488fea.bindPopup(popup_e384e9098ee254b93d22a7a64bc51557)
+        ;
+
+        
+    
+    
+                marker_c3b85e7de968cb21487cda880f488fea.setIcon(icon_cb6368dae64e6f8924826b04054cd008);
+            
+    
+            var marker_a4253cfd72c8aaa3456e247636a240c9 = L.marker(
+                [20.08923, 86.00522],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_47647925c9a3d756056c516b3097d73b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f0b880bf46e533e7cc271727fb877df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56aa348b0fa0f210418a24c7b7aad3bc = $(`<div id="html_56aa348b0fa0f210418a24c7b7aad3bc" style="width: 100.0%; height: 100.0%;">Pond: Chennua, Infestation: Clear water surface</div>`)[0];
+                popup_4f0b880bf46e533e7cc271727fb877df.setContent(html_56aa348b0fa0f210418a24c7b7aad3bc);
+            
+        
+
+        marker_a4253cfd72c8aaa3456e247636a240c9.bindPopup(popup_4f0b880bf46e533e7cc271727fb877df)
+        ;
+
+        
+    
+    
+                marker_a4253cfd72c8aaa3456e247636a240c9.setIcon(icon_47647925c9a3d756056c516b3097d73b);
+            
+    
+            var marker_dfd0dcc787e9d2a10437e040a8afecb0 = L.marker(
+                [20.06058, 86.00283],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_6a70ee3f6faab2eda621006ff9435dfb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4605c0e60a3da41443feb32b4bed290 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb8de1f66eb2d01796165f3ee288077a = $(`<div id="html_bb8de1f66eb2d01796165f3ee288077a" style="width: 100.0%; height: 100.0%;">Pond: nimapara bazar, Infestation: Clear water surface</div>`)[0];
+                popup_e4605c0e60a3da41443feb32b4bed290.setContent(html_bb8de1f66eb2d01796165f3ee288077a);
+            
+        
+
+        marker_dfd0dcc787e9d2a10437e040a8afecb0.bindPopup(popup_e4605c0e60a3da41443feb32b4bed290)
+        ;
+
+        
+    
+    
+                marker_dfd0dcc787e9d2a10437e040a8afecb0.setIcon(icon_6a70ee3f6faab2eda621006ff9435dfb);
+            
+    
+            var marker_740f5e5dddfa3dbff0f2461f1ccb59e4 = L.marker(
+                [20.09845, 86.00909],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1e111625b391d23adaf4b2aee400f0a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_451e9ba138383d64d65a42342a8f7c13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5900e454123b1aa6eae1dc46fde3a261 = $(`<div id="html_5900e454123b1aa6eae1dc46fde3a261" style="width: 100.0%; height: 100.0%;">Pond: Chennua, Infestation: Clear water surface</div>`)[0];
+                popup_451e9ba138383d64d65a42342a8f7c13.setContent(html_5900e454123b1aa6eae1dc46fde3a261);
+            
+        
+
+        marker_740f5e5dddfa3dbff0f2461f1ccb59e4.bindPopup(popup_451e9ba138383d64d65a42342a8f7c13)
+        ;
+
+        
+    
+    
+                marker_740f5e5dddfa3dbff0f2461f1ccb59e4.setIcon(icon_1e111625b391d23adaf4b2aee400f0a8);
+            
+    
+            var marker_9ed2c06b3618add9477d1886fba001b5 = L.marker(
+                [20.0024, 86.28322],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_cc0f893df7754fd0ee051e2e50978173 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4b8c2858dd13c12a967b93bf1863516 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe3c271a092fb6da911fbee01ebdc52f = $(`<div id="html_fe3c271a092fb6da911fbee01ebdc52f" style="width: 100.0%; height: 100.0%;">Pond: athatira, Infestation: duckweed</div>`)[0];
+                popup_d4b8c2858dd13c12a967b93bf1863516.setContent(html_fe3c271a092fb6da911fbee01ebdc52f);
+            
+        
+
+        marker_9ed2c06b3618add9477d1886fba001b5.bindPopup(popup_d4b8c2858dd13c12a967b93bf1863516)
+        ;
+
+        
+    
+    
+                marker_9ed2c06b3618add9477d1886fba001b5.setIcon(icon_cc0f893df7754fd0ee051e2e50978173);
+            
+    
+            var marker_33e47ecc1121d1f70957000e6346554f = L.marker(
+                [19.97388, 86.31274],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_3a78f575b7bc74966d6f57a3fbd32707 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fcacc4e92adcd6186a80abec3d3c4a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ee7a8c2a6ca71b96de6d62d6a4abfbf = $(`<div id="html_1ee7a8c2a6ca71b96de6d62d6a4abfbf" style="width: 100.0%; height: 100.0%;">Pond: nuagarh, Infestation: lotus</div>`)[0];
+                popup_9fcacc4e92adcd6186a80abec3d3c4a7.setContent(html_1ee7a8c2a6ca71b96de6d62d6a4abfbf);
+            
+        
+
+        marker_33e47ecc1121d1f70957000e6346554f.bindPopup(popup_9fcacc4e92adcd6186a80abec3d3c4a7)
+        ;
+
+        
+    
+    
+                marker_33e47ecc1121d1f70957000e6346554f.setIcon(icon_3a78f575b7bc74966d6f57a3fbd32707);
+            
+    
+            var marker_0e401610e5df419ff0697c8f27a9864f = L.marker(
+                [20.07325, 86.00184],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_dda55141606d9751914f911a33fe9b44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9297febd00cdadd59fc9b7e48189fae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1aa62e709abc7e324373f0de7eefbe8 = $(`<div id="html_d1aa62e709abc7e324373f0de7eefbe8" style="width: 100.0%; height: 100.0%;">Pond: denua, Infestation: Water hyacinth</div>`)[0];
+                popup_e9297febd00cdadd59fc9b7e48189fae.setContent(html_d1aa62e709abc7e324373f0de7eefbe8);
+            
+        
+
+        marker_0e401610e5df419ff0697c8f27a9864f.bindPopup(popup_e9297febd00cdadd59fc9b7e48189fae)
+        ;
+
+        
+    
+    
+                marker_0e401610e5df419ff0697c8f27a9864f.setIcon(icon_dda55141606d9751914f911a33fe9b44);
+            
+    
+            var marker_efd4e3d46682778bac419b65536efd7f = L.marker(
+                [19.97626, 86.30858],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1b196de468007baa3bd639a8920d4673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1c35be9fa95f7e331d963418f7d3ada = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a26793a50ea34cf1998f1f9825efbee9 = $(`<div id="html_a26793a50ea34cf1998f1f9825efbee9" style="width: 100.0%; height: 100.0%;">Pond: nanpur, Infestation: lotus</div>`)[0];
+                popup_a1c35be9fa95f7e331d963418f7d3ada.setContent(html_a26793a50ea34cf1998f1f9825efbee9);
+            
+        
+
+        marker_efd4e3d46682778bac419b65536efd7f.bindPopup(popup_a1c35be9fa95f7e331d963418f7d3ada)
+        ;
+
+        
+    
+    
+                marker_efd4e3d46682778bac419b65536efd7f.setIcon(icon_1b196de468007baa3bd639a8920d4673);
+            
+    
+            var marker_d68046f4808a7c59bf86fd77b3fca6aa = L.marker(
+                [20.00543, 86.29191],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_24e989c1e62844f5adc29e4fc4aec884 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b49492b4bf5aeb8650d1405fcb089a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88c202c7fc265370e92206fd4e5b5411 = $(`<div id="html_88c202c7fc265370e92206fd4e5b5411" style="width: 100.0%; height: 100.0%;">Pond: alangapur, Infestation: Water hyacinth</div>`)[0];
+                popup_6b49492b4bf5aeb8650d1405fcb089a9.setContent(html_88c202c7fc265370e92206fd4e5b5411);
+            
+        
+
+        marker_d68046f4808a7c59bf86fd77b3fca6aa.bindPopup(popup_6b49492b4bf5aeb8650d1405fcb089a9)
+        ;
+
+        
+    
+    
+                marker_d68046f4808a7c59bf86fd77b3fca6aa.setIcon(icon_24e989c1e62844f5adc29e4fc4aec884);
+            
+    
+            var marker_c0d0f4ec886758fd67ddeda9c52f219e = L.marker(
+                [20.06433, 86.06017],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_eadcd45bc40707588ad2d944acc32317 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2de808818c5f3a632ba5692b6948ff5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1e17eb04916a0bfe82846d28d79715a = $(`<div id="html_e1e17eb04916a0bfe82846d28d79715a" style="width: 100.0%; height: 100.0%;">Pond: kantilo, Infestation: Duckweed</div>`)[0];
+                popup_2de808818c5f3a632ba5692b6948ff5d.setContent(html_e1e17eb04916a0bfe82846d28d79715a);
+            
+        
+
+        marker_c0d0f4ec886758fd67ddeda9c52f219e.bindPopup(popup_2de808818c5f3a632ba5692b6948ff5d)
+        ;
+
+        
+    
+    
+                marker_c0d0f4ec886758fd67ddeda9c52f219e.setIcon(icon_eadcd45bc40707588ad2d944acc32317);
+            
+    
+            var marker_e3ff8327f574c985073327ae280e9667 = L.marker(
+                [20.06344, 86.0516],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_33703b3aeae3e3d668f0fe7a494fcd97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a9211006376cff97c84531976191171 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6c7ca4775b3a7c87170cbbecaed961c = $(`<div id="html_d6c7ca4775b3a7c87170cbbecaed961c" style="width: 100.0%; height: 100.0%;">Pond: olans, Infestation: Duckweed</div>`)[0];
+                popup_5a9211006376cff97c84531976191171.setContent(html_d6c7ca4775b3a7c87170cbbecaed961c);
+            
+        
+
+        marker_e3ff8327f574c985073327ae280e9667.bindPopup(popup_5a9211006376cff97c84531976191171)
+        ;
+
+        
+    
+    
+                marker_e3ff8327f574c985073327ae280e9667.setIcon(icon_33703b3aeae3e3d668f0fe7a494fcd97);
+            
+    
+            var marker_589e22c23b1dc1a314c8559bb8c077d4 = L.marker(
+                [20.06403, 86.05235],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_226b0188295364ea27e9e9b99126a47a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f75008db604ff9aac6791aff2bf213a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c65603c3dc705d69634c182690f4dacf = $(`<div id="html_c65603c3dc705d69634c182690f4dacf" style="width: 100.0%; height: 100.0%;">Pond: olans, Infestation: Water hyacinth</div>`)[0];
+                popup_5f75008db604ff9aac6791aff2bf213a.setContent(html_c65603c3dc705d69634c182690f4dacf);
+            
+        
+
+        marker_589e22c23b1dc1a314c8559bb8c077d4.bindPopup(popup_5f75008db604ff9aac6791aff2bf213a)
+        ;
+
+        
+    
+    
+                marker_589e22c23b1dc1a314c8559bb8c077d4.setIcon(icon_226b0188295364ea27e9e9b99126a47a);
+            
+    
+            var marker_8b09b89b57fd3ccda54ebf32a78c0e45 = L.marker(
+                [20.09846, 86.00912],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a9dbe38635ef324d9a477e8bd3933729 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8f6674029295a39ad4248786d681680 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbec826e166f8990e00ff98a9feb6ead = $(`<div id="html_fbec826e166f8990e00ff98a9feb6ead" style="width: 100.0%; height: 100.0%;">Pond: chennua, Infestation: Duckweed</div>`)[0];
+                popup_f8f6674029295a39ad4248786d681680.setContent(html_fbec826e166f8990e00ff98a9feb6ead);
+            
+        
+
+        marker_8b09b89b57fd3ccda54ebf32a78c0e45.bindPopup(popup_f8f6674029295a39ad4248786d681680)
+        ;
+
+        
+    
+    
+                marker_8b09b89b57fd3ccda54ebf32a78c0e45.setIcon(icon_a9dbe38635ef324d9a477e8bd3933729);
+            
+    
+            var marker_e5996fc6c19942d24a94437e32a7b81a = L.marker(
+                [19.99576, 86.27609],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_537920dec717eb3eaa334703a3c42c7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd03845cc93055bcb7e3bbf8e361cb7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_261330cd3ae49dbd894109b1968cde8c = $(`<div id="html_261330cd3ae49dbd894109b1968cde8c" style="width: 100.0%; height: 100.0%;">Pond: beguniabasta, Infestation: Duckweed</div>`)[0];
+                popup_dd03845cc93055bcb7e3bbf8e361cb7f.setContent(html_261330cd3ae49dbd894109b1968cde8c);
+            
+        
+
+        marker_e5996fc6c19942d24a94437e32a7b81a.bindPopup(popup_dd03845cc93055bcb7e3bbf8e361cb7f)
+        ;
+
+        
+    
+    
+                marker_e5996fc6c19942d24a94437e32a7b81a.setIcon(icon_537920dec717eb3eaa334703a3c42c7f);
+            
+    
+            var marker_e7245486f4da95431562471995356b92 = L.marker(
+                [19.9853, 86.27951],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_be4f5784f49a09c7e5d590e8559f496d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e3b81321aae8e550b9098ae7539f095 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f28917be01c4bf1ae5bc099cd703a43a = $(`<div id="html_f28917be01c4bf1ae5bc099cd703a43a" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_3e3b81321aae8e550b9098ae7539f095.setContent(html_f28917be01c4bf1ae5bc099cd703a43a);
+            
+        
+
+        marker_e7245486f4da95431562471995356b92.bindPopup(popup_3e3b81321aae8e550b9098ae7539f095)
+        ;
+
+        
+    
+    
+                marker_e7245486f4da95431562471995356b92.setIcon(icon_be4f5784f49a09c7e5d590e8559f496d);
+            
+    
+            var marker_0e9fae084194d68ff2ebad62825e7cbc = L.marker(
+                [19.98444, 86.27804],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_d6ca12e8e3b0571548dff766e6877139 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c23ffe0c47c9bb3d78ca57362bfd7ed9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc6d36eaf48f484d3814030036f46b47 = $(`<div id="html_cc6d36eaf48f484d3814030036f46b47" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_c23ffe0c47c9bb3d78ca57362bfd7ed9.setContent(html_cc6d36eaf48f484d3814030036f46b47);
+            
+        
+
+        marker_0e9fae084194d68ff2ebad62825e7cbc.bindPopup(popup_c23ffe0c47c9bb3d78ca57362bfd7ed9)
+        ;
+
+        
+    
+    
+                marker_0e9fae084194d68ff2ebad62825e7cbc.setIcon(icon_d6ca12e8e3b0571548dff766e6877139);
+            
+    
+            var marker_ab9ec9575c6ea630a18f0c6373edbc19 = L.marker(
+                [19.98431, 86.27699],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_4c2d781286f25a678b85a66c8cd20849 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48504c4a16884bf6156d5e2229ef7b56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af8993b6131f6a52043225ac31b9499b = $(`<div id="html_af8993b6131f6a52043225ac31b9499b" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_48504c4a16884bf6156d5e2229ef7b56.setContent(html_af8993b6131f6a52043225ac31b9499b);
+            
+        
+
+        marker_ab9ec9575c6ea630a18f0c6373edbc19.bindPopup(popup_48504c4a16884bf6156d5e2229ef7b56)
+        ;
+
+        
+    
+    
+                marker_ab9ec9575c6ea630a18f0c6373edbc19.setIcon(icon_4c2d781286f25a678b85a66c8cd20849);
+            
+    
+            var marker_6dec7d8de5f587a3bf7ef0c1440c7a19 = L.marker(
+                [19.98429, 86.27551],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_8fc56b2e39a2283eae563e3acc3c1ed6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_192b3bf794515ddd1471154e0c7ddca2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dc6c78b596789a40d6e16f9722f5d41 = $(`<div id="html_0dc6c78b596789a40d6e16f9722f5d41" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_192b3bf794515ddd1471154e0c7ddca2.setContent(html_0dc6c78b596789a40d6e16f9722f5d41);
+            
+        
+
+        marker_6dec7d8de5f587a3bf7ef0c1440c7a19.bindPopup(popup_192b3bf794515ddd1471154e0c7ddca2)
+        ;
+
+        
+    
+    
+                marker_6dec7d8de5f587a3bf7ef0c1440c7a19.setIcon(icon_8fc56b2e39a2283eae563e3acc3c1ed6);
+            
+    
+            var marker_73a9d47933e554b21aa69f795387bc95 = L.marker(
+                [19.98454, 86.27485],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_870a25c519cde5fb0d0bcbfcaca319a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da6209b793286ada3392d0b8eb043300 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a70cdc27320fe834b81b29070714a4 = $(`<div id="html_41a70cdc27320fe834b81b29070714a4" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_da6209b793286ada3392d0b8eb043300.setContent(html_41a70cdc27320fe834b81b29070714a4);
+            
+        
+
+        marker_73a9d47933e554b21aa69f795387bc95.bindPopup(popup_da6209b793286ada3392d0b8eb043300)
+        ;
+
+        
+    
+    
+                marker_73a9d47933e554b21aa69f795387bc95.setIcon(icon_870a25c519cde5fb0d0bcbfcaca319a2);
+            
+    
+            var marker_d4a9584f083f0e0c73ea79c1cd363da7 = L.marker(
+                [19.98678, 86.26997],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_4226a9f928e4811d617cd804dc69d147 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fbcd202423af1d8d32af897dc685f73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55ac406cf2dbd6abe94bb9afc4d1793c = $(`<div id="html_55ac406cf2dbd6abe94bb9afc4d1793c" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_1fbcd202423af1d8d32af897dc685f73.setContent(html_55ac406cf2dbd6abe94bb9afc4d1793c);
+            
+        
+
+        marker_d4a9584f083f0e0c73ea79c1cd363da7.bindPopup(popup_1fbcd202423af1d8d32af897dc685f73)
+        ;
+
+        
+    
+    
+                marker_d4a9584f083f0e0c73ea79c1cd363da7.setIcon(icon_4226a9f928e4811d617cd804dc69d147);
+            
+    
+            var marker_1fa7bacb64ebafe05b577c31ebacc334 = L.marker(
+                [19.98683, 86.27002],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1de6f3b6222fbdacc716b79a3f360af6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c80c87de497ee617fe9c838ec247608 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be860ee68dbbf014f3d049add701798b = $(`<div id="html_be860ee68dbbf014f3d049add701798b" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_3c80c87de497ee617fe9c838ec247608.setContent(html_be860ee68dbbf014f3d049add701798b);
+            
+        
+
+        marker_1fa7bacb64ebafe05b577c31ebacc334.bindPopup(popup_3c80c87de497ee617fe9c838ec247608)
+        ;
+
+        
+    
+    
+                marker_1fa7bacb64ebafe05b577c31ebacc334.setIcon(icon_1de6f3b6222fbdacc716b79a3f360af6);
+            
+    
+            var marker_34925559fefc9dc18c1ce9d7c83f92fe = L.marker(
+                [19.98685, 86.27024],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_45e7b4d4d211979c7b88a4af74c95382 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d09bd9cfb10bc8ab56d716268402c00f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82e8472850c63aec0891cf3de5d928fa = $(`<div id="html_82e8472850c63aec0891cf3de5d928fa" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_d09bd9cfb10bc8ab56d716268402c00f.setContent(html_82e8472850c63aec0891cf3de5d928fa);
+            
+        
+
+        marker_34925559fefc9dc18c1ce9d7c83f92fe.bindPopup(popup_d09bd9cfb10bc8ab56d716268402c00f)
+        ;
+
+        
+    
+    
+                marker_34925559fefc9dc18c1ce9d7c83f92fe.setIcon(icon_45e7b4d4d211979c7b88a4af74c95382);
+            
+    
+            var marker_b96c41c324f18f074d70edf5084f54c6 = L.marker(
+                [19.98697, 86.27054],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_8eac8c588af985a3dba5ee513301aac5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_199c0f5dbb420652026c2a1c4b01fbb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18ee40f03cac8cfc477f7342398848d5 = $(`<div id="html_18ee40f03cac8cfc477f7342398848d5" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_199c0f5dbb420652026c2a1c4b01fbb9.setContent(html_18ee40f03cac8cfc477f7342398848d5);
+            
+        
+
+        marker_b96c41c324f18f074d70edf5084f54c6.bindPopup(popup_199c0f5dbb420652026c2a1c4b01fbb9)
+        ;
+
+        
+    
+    
+                marker_b96c41c324f18f074d70edf5084f54c6.setIcon(icon_8eac8c588af985a3dba5ee513301aac5);
+            
+    
+            var marker_5e28ac4f482fadde92265dd295eb5c3a = L.marker(
+                [19.987, 86.27091],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_693cf4df712d05adef339f781aa0ff44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7dd180db13e713c282c5e2253994477 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a84f5b4c42360a9772c975f1597c7916 = $(`<div id="html_a84f5b4c42360a9772c975f1597c7916" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_c7dd180db13e713c282c5e2253994477.setContent(html_a84f5b4c42360a9772c975f1597c7916);
+            
+        
+
+        marker_5e28ac4f482fadde92265dd295eb5c3a.bindPopup(popup_c7dd180db13e713c282c5e2253994477)
+        ;
+
+        
+    
+    
+                marker_5e28ac4f482fadde92265dd295eb5c3a.setIcon(icon_693cf4df712d05adef339f781aa0ff44);
+            
+    
+            var marker_841b93c99ac1b982402d1a1eaa504398 = L.marker(
+                [19.98706, 86.27118],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1b9205ff218d37cd62a8fe409e875cdd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0399b055b6669bd45469ada63a5f9bd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e68e0286952fcce7f52cdd4fa427dc7a = $(`<div id="html_e68e0286952fcce7f52cdd4fa427dc7a" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_0399b055b6669bd45469ada63a5f9bd9.setContent(html_e68e0286952fcce7f52cdd4fa427dc7a);
+            
+        
+
+        marker_841b93c99ac1b982402d1a1eaa504398.bindPopup(popup_0399b055b6669bd45469ada63a5f9bd9)
+        ;
+
+        
+    
+    
+                marker_841b93c99ac1b982402d1a1eaa504398.setIcon(icon_1b9205ff218d37cd62a8fe409e875cdd);
+            
+    
+            var marker_53d78e8d2c50521da98b440fa3e7e196 = L.marker(
+                [19.98714, 86.27119],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_8ec32d4b7b728989e9e125fc8dcfd329 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15526e500f1ca6605a2e28644efafef5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78d8f7808c670abc4804e8408e421c44 = $(`<div id="html_78d8f7808c670abc4804e8408e421c44" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_15526e500f1ca6605a2e28644efafef5.setContent(html_78d8f7808c670abc4804e8408e421c44);
+            
+        
+
+        marker_53d78e8d2c50521da98b440fa3e7e196.bindPopup(popup_15526e500f1ca6605a2e28644efafef5)
+        ;
+
+        
+    
+    
+                marker_53d78e8d2c50521da98b440fa3e7e196.setIcon(icon_8ec32d4b7b728989e9e125fc8dcfd329);
+            
+    
+            var marker_4b50f700d87c2414b0d5eb9f15f39ca2 = L.marker(
+                [19.98026, 86.26942],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_c7b4536ba554de0c53db91942bfa51a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_781a7feaa4b7d5a19c16b420ff4114b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab7c1dd0fe03301d0fd00fc5daeb45c3 = $(`<div id="html_ab7c1dd0fe03301d0fd00fc5daeb45c3" style="width: 100.0%; height: 100.0%;">Pond: naiguan, Infestation: Clear water surface</div>`)[0];
+                popup_781a7feaa4b7d5a19c16b420ff4114b3.setContent(html_ab7c1dd0fe03301d0fd00fc5daeb45c3);
+            
+        
+
+        marker_4b50f700d87c2414b0d5eb9f15f39ca2.bindPopup(popup_781a7feaa4b7d5a19c16b420ff4114b3)
+        ;
+
+        
+    
+    
+                marker_4b50f700d87c2414b0d5eb9f15f39ca2.setIcon(icon_c7b4536ba554de0c53db91942bfa51a2);
+            
+    
+            var marker_8068cc8f7a10e3a2be6539ea5d4ed2ce = L.marker(
+                [19.97996, 86.25916],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_17dc0524e9222b48654c99b58f05c85e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba6e2cc26c32d39101fa1019b17af143 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41201a6de8e1c9664d412e6f3320f1d5 = $(`<div id="html_41201a6de8e1c9664d412e6f3320f1d5" style="width: 100.0%; height: 100.0%;">Pond: harinahula, Infestation: Clear water surface</div>`)[0];
+                popup_ba6e2cc26c32d39101fa1019b17af143.setContent(html_41201a6de8e1c9664d412e6f3320f1d5);
+            
+        
+
+        marker_8068cc8f7a10e3a2be6539ea5d4ed2ce.bindPopup(popup_ba6e2cc26c32d39101fa1019b17af143)
+        ;
+
+        
+    
+    
+                marker_8068cc8f7a10e3a2be6539ea5d4ed2ce.setIcon(icon_17dc0524e9222b48654c99b58f05c85e);
+            
+    
+            var marker_9a490494e04970577c464dc85a7e5c37 = L.marker(
+                [19.98794, 86.25348],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_2287141fd98270986764c4721970f4d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c225dffdc029472505460999264dcc08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cb50b7783fb69725aa3cab8ae330047 = $(`<div id="html_5cb50b7783fb69725aa3cab8ae330047" style="width: 100.0%; height: 100.0%;">Pond: ukulei, Infestation: Clear water surface</div>`)[0];
+                popup_c225dffdc029472505460999264dcc08.setContent(html_5cb50b7783fb69725aa3cab8ae330047);
+            
+        
+
+        marker_9a490494e04970577c464dc85a7e5c37.bindPopup(popup_c225dffdc029472505460999264dcc08)
+        ;
+
+        
+    
+    
+                marker_9a490494e04970577c464dc85a7e5c37.setIcon(icon_2287141fd98270986764c4721970f4d1);
+            
+    
+            var marker_256620a24e900d60372a9cde67de7cfc = L.marker(
+                [19.98815, 86.25296],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_c5e7b82508f87bd8e16755f17f15cbb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_384ad467809dc1034debbad6b7f47914 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76db1e8acceb85e01d8ad5f0948dd3c8 = $(`<div id="html_76db1e8acceb85e01d8ad5f0948dd3c8" style="width: 100.0%; height: 100.0%;">Pond: ukulei, Infestation: Clear water surface</div>`)[0];
+                popup_384ad467809dc1034debbad6b7f47914.setContent(html_76db1e8acceb85e01d8ad5f0948dd3c8);
+            
+        
+
+        marker_256620a24e900d60372a9cde67de7cfc.bindPopup(popup_384ad467809dc1034debbad6b7f47914)
+        ;
+
+        
+    
+    
+                marker_256620a24e900d60372a9cde67de7cfc.setIcon(icon_c5e7b82508f87bd8e16755f17f15cbb3);
+            
+    
+            var marker_2ef9345abb7bb5cccae4e9f33fc029a3 = L.marker(
+                [19.98825, 86.25267],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_63a178937d67ee7ab266db7929530ddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e724d2ac0ee439e7eb8a307b683477fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c84f7668e80e0d74b5f5112978528e8f = $(`<div id="html_c84f7668e80e0d74b5f5112978528e8f" style="width: 100.0%; height: 100.0%;">Pond: ukulei, Infestation: Clear water surface</div>`)[0];
+                popup_e724d2ac0ee439e7eb8a307b683477fb.setContent(html_c84f7668e80e0d74b5f5112978528e8f);
+            
+        
+
+        marker_2ef9345abb7bb5cccae4e9f33fc029a3.bindPopup(popup_e724d2ac0ee439e7eb8a307b683477fb)
+        ;
+
+        
+    
+    
+                marker_2ef9345abb7bb5cccae4e9f33fc029a3.setIcon(icon_63a178937d67ee7ab266db7929530ddd);
+            
+    
+            var marker_b37cac94c73302041629950f2f441f38 = L.marker(
+                [19.9883, 86.25124],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_d3d9e9511fcaf4f87efcf3eed6dcdf74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fba4a6e17f4d0ed4924f5de9c5b0ce3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e79503a1a3726bfd7afe5dac9bfe77a = $(`<div id="html_2e79503a1a3726bfd7afe5dac9bfe77a" style="width: 100.0%; height: 100.0%;">Pond: ukulei, Infestation: Clear water surface</div>`)[0];
+                popup_2fba4a6e17f4d0ed4924f5de9c5b0ce3.setContent(html_2e79503a1a3726bfd7afe5dac9bfe77a);
+            
+        
+
+        marker_b37cac94c73302041629950f2f441f38.bindPopup(popup_2fba4a6e17f4d0ed4924f5de9c5b0ce3)
+        ;
+
+        
+    
+    
+                marker_b37cac94c73302041629950f2f441f38.setIcon(icon_d3d9e9511fcaf4f87efcf3eed6dcdf74);
+            
+    
+            var marker_e005341505e427feca0ba5bd72c5e97e = L.marker(
+                [19.98783, 86.25073],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_9d9c9e8f3f79f7f7e08fdef0cb5b671b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e33c11bda9b31b03c5fc88ad0772aa79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bb3e61652ce0d48501ff1e389469e3a = $(`<div id="html_2bb3e61652ce0d48501ff1e389469e3a" style="width: 100.0%; height: 100.0%;">Pond: ukulei, Infestation: Clear water surface</div>`)[0];
+                popup_e33c11bda9b31b03c5fc88ad0772aa79.setContent(html_2bb3e61652ce0d48501ff1e389469e3a);
+            
+        
+
+        marker_e005341505e427feca0ba5bd72c5e97e.bindPopup(popup_e33c11bda9b31b03c5fc88ad0772aa79)
+        ;
+
+        
+    
+    
+                marker_e005341505e427feca0ba5bd72c5e97e.setIcon(icon_9d9c9e8f3f79f7f7e08fdef0cb5b671b);
+            
+    
+            var marker_d3569e64e5059b14801af6f87f26f618 = L.marker(
+                [19.98784, 86.25072],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a6f073d608da3f1e360be3bce20b0015 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cec8f13d4dacd9112f140aaacac7864 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0918e9cc530a7324c4af153ff6645b99 = $(`<div id="html_0918e9cc530a7324c4af153ff6645b99" style="width: 100.0%; height: 100.0%;">Pond: ukulei, Infestation: Clear water surface</div>`)[0];
+                popup_7cec8f13d4dacd9112f140aaacac7864.setContent(html_0918e9cc530a7324c4af153ff6645b99);
+            
+        
+
+        marker_d3569e64e5059b14801af6f87f26f618.bindPopup(popup_7cec8f13d4dacd9112f140aaacac7864)
+        ;
+
+        
+    
+    
+                marker_d3569e64e5059b14801af6f87f26f618.setIcon(icon_a6f073d608da3f1e360be3bce20b0015);
+            
+    
+            var marker_712ec6f2f9b203e2ae146f631052018a = L.marker(
+                [20.05019, 86.11321],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a483be203e6f7dfeebc8f336a3a26a3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05835cdcc9d8332a3d163703ee21a1f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_662351b84f23d689ee57ab59f3b5ba6c = $(`<div id="html_662351b84f23d689ee57ab59f3b5ba6c" style="width: 100.0%; height: 100.0%;">Pond: amareswar, Infestation: Clear water surface</div>`)[0];
+                popup_05835cdcc9d8332a3d163703ee21a1f0.setContent(html_662351b84f23d689ee57ab59f3b5ba6c);
+            
+        
+
+        marker_712ec6f2f9b203e2ae146f631052018a.bindPopup(popup_05835cdcc9d8332a3d163703ee21a1f0)
+        ;
+
+        
+    
+    
+                marker_712ec6f2f9b203e2ae146f631052018a.setIcon(icon_a483be203e6f7dfeebc8f336a3a26a3e);
+            
+    
+            var marker_68cac684acfaf971f54d0b1e2d3c9714 = L.marker(
+                [20.05764, 86.09672],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1e2e91deda6b7f3bfb5a5400aa26e934 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8b87f20d1593c95cbef1100b7d06da1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f77e904996c47b2aaf4e1955b1ed04c = $(`<div id="html_4f77e904996c47b2aaf4e1955b1ed04c" style="width: 100.0%; height: 100.0%;">Pond: amareswar, Infestation: Clear water surface</div>`)[0];
+                popup_c8b87f20d1593c95cbef1100b7d06da1.setContent(html_4f77e904996c47b2aaf4e1955b1ed04c);
+            
+        
+
+        marker_68cac684acfaf971f54d0b1e2d3c9714.bindPopup(popup_c8b87f20d1593c95cbef1100b7d06da1)
+        ;
+
+        
+    
+    
+                marker_68cac684acfaf971f54d0b1e2d3c9714.setIcon(icon_1e2e91deda6b7f3bfb5a5400aa26e934);
+            
+    
+            var marker_f2386c19fd47bfe1b1c9736d1a9ce7e9 = L.marker(
+                [20.07397, 86.09113],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_abb6615be19ab54bcecf8fb7cca8ad51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2d1ab60a62730a05fce6eaa4c10a6c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e570c076219d5a6347f5e6674aa4853 = $(`<div id="html_8e570c076219d5a6347f5e6674aa4853" style="width: 100.0%; height: 100.0%;">Pond: chandramauli, Infestation: Water hyacinth</div>`)[0];
+                popup_b2d1ab60a62730a05fce6eaa4c10a6c2.setContent(html_8e570c076219d5a6347f5e6674aa4853);
+            
+        
+
+        marker_f2386c19fd47bfe1b1c9736d1a9ce7e9.bindPopup(popup_b2d1ab60a62730a05fce6eaa4c10a6c2)
+        ;
+
+        
+    
+    
+                marker_f2386c19fd47bfe1b1c9736d1a9ce7e9.setIcon(icon_abb6615be19ab54bcecf8fb7cca8ad51);
+            
+    
+            var marker_ebae334f94353fefb08ea17f21d70d1d = L.marker(
+                [20.09599, 85.83377],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_f8e104dd61891037fa61cd31a756470b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_331c9c5b9b8a3e4d5db4b05ebaf18f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b930ca5047f0c57e1869df11606beab6 = $(`<div id="html_b930ca5047f0c57e1869df11606beab6" style="width: 100.0%; height: 100.0%;">Pond: danda mukundapur, Infestation: Clear water surface</div>`)[0];
+                popup_331c9c5b9b8a3e4d5db4b05ebaf18f20.setContent(html_b930ca5047f0c57e1869df11606beab6);
+            
+        
+
+        marker_ebae334f94353fefb08ea17f21d70d1d.bindPopup(popup_331c9c5b9b8a3e4d5db4b05ebaf18f20)
+        ;
+
+        
+    
+    
+                marker_ebae334f94353fefb08ea17f21d70d1d.setIcon(icon_f8e104dd61891037fa61cd31a756470b);
+            
+    
+            var marker_0a410a904536ea36f6e82febb2d1b804 = L.marker(
+                [20.07021, 8581462.0],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a1911d15d6c30525ffe91bdaf882396b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e77e067db70d02d7b1550bdf0b9caa7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0ff2c3f191d17326e0bcda7819f062b = $(`<div id="html_e0ff2c3f191d17326e0bcda7819f062b" style="width: 100.0%; height: 100.0%;">Pond: dhamagiria, Infestation: Water hyacinth</div>`)[0];
+                popup_e77e067db70d02d7b1550bdf0b9caa7c.setContent(html_e0ff2c3f191d17326e0bcda7819f062b);
+            
+        
+
+        marker_0a410a904536ea36f6e82febb2d1b804.bindPopup(popup_e77e067db70d02d7b1550bdf0b9caa7c)
+        ;
+
+        
+    
+    
+                marker_0a410a904536ea36f6e82febb2d1b804.setIcon(icon_a1911d15d6c30525ffe91bdaf882396b);
+            
+    
+            var marker_b4a0baefc576c4cdeb14c445c0abd982 = L.marker(
+                [20.07575, 85.80777],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_3e6e42048c0016f6a139539bcea4f1b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_783e00d6143caedfa6682571961bcf5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d29833b8762cf0bb0fd42f3de0450131 = $(`<div id="html_d29833b8762cf0bb0fd42f3de0450131" style="width: 100.0%; height: 100.0%;">Pond: khatasarang, Infestation: Clear water surface</div>`)[0];
+                popup_783e00d6143caedfa6682571961bcf5c.setContent(html_d29833b8762cf0bb0fd42f3de0450131);
+            
+        
+
+        marker_b4a0baefc576c4cdeb14c445c0abd982.bindPopup(popup_783e00d6143caedfa6682571961bcf5c)
+        ;
+
+        
+    
+    
+                marker_b4a0baefc576c4cdeb14c445c0abd982.setIcon(icon_3e6e42048c0016f6a139539bcea4f1b2);
+            
+    
+            var marker_4f0cc408523918ead84386669581cf7d = L.marker(
+                [20.07536, 85.80768],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_ea85db28c00746a810d92f82bbf14f10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6966f530b8d336dfb2dce5e542af64b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9fa02a127f715a5676b992f340ce0d8 = $(`<div id="html_e9fa02a127f715a5676b992f340ce0d8" style="width: 100.0%; height: 100.0%;">Pond: khatasarang, Infestation: Clear water surface</div>`)[0];
+                popup_6966f530b8d336dfb2dce5e542af64b8.setContent(html_e9fa02a127f715a5676b992f340ce0d8);
+            
+        
+
+        marker_4f0cc408523918ead84386669581cf7d.bindPopup(popup_6966f530b8d336dfb2dce5e542af64b8)
+        ;
+
+        
+    
+    
+                marker_4f0cc408523918ead84386669581cf7d.setIcon(icon_ea85db28c00746a810d92f82bbf14f10);
+            
+    
+            var marker_65499fa40f0220cfc65b084841244ba4 = L.marker(
+                [20.0745, 85.80867],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0365049b3ea0fcc3892053e32e0e60ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54c06e7fcefc2773703a0b9007603f78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_317cf810736aaf206dfaeb6c511da89e = $(`<div id="html_317cf810736aaf206dfaeb6c511da89e" style="width: 100.0%; height: 100.0%;">Pond: khatasarang, Infestation: Clear water surface</div>`)[0];
+                popup_54c06e7fcefc2773703a0b9007603f78.setContent(html_317cf810736aaf206dfaeb6c511da89e);
+            
+        
+
+        marker_65499fa40f0220cfc65b084841244ba4.bindPopup(popup_54c06e7fcefc2773703a0b9007603f78)
+        ;
+
+        
+    
+    
+                marker_65499fa40f0220cfc65b084841244ba4.setIcon(icon_0365049b3ea0fcc3892053e32e0e60ab);
+            
+    
+            var marker_b9685e0c14341a50abbeb36448bc3b6a = L.marker(
+                [20.07249, 85.80939],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_1e1cae0c95311ec884190cb7f0123bf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e68d0114f2e27385a6ffb8da38b2af11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f78f706d4c21185df02dd7209eaf0f85 = $(`<div id="html_f78f706d4c21185df02dd7209eaf0f85" style="width: 100.0%; height: 100.0%;">Pond: khatasarang, Infestation: Clear water surface</div>`)[0];
+                popup_e68d0114f2e27385a6ffb8da38b2af11.setContent(html_f78f706d4c21185df02dd7209eaf0f85);
+            
+        
+
+        marker_b9685e0c14341a50abbeb36448bc3b6a.bindPopup(popup_e68d0114f2e27385a6ffb8da38b2af11)
+        ;
+
+        
+    
+    
+                marker_b9685e0c14341a50abbeb36448bc3b6a.setIcon(icon_1e1cae0c95311ec884190cb7f0123bf9);
+            
+    
+            var marker_742b184f5c330700e123e6f4ad0c8d93 = L.marker(
+                [20.07637, 85.81306],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_39579423674c683727e8c342e80aaf2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9d87a18910356fbabdd786ac1eda5e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3ec6a3e7ab14ee537c0069a02d255fa = $(`<div id="html_c3ec6a3e7ab14ee537c0069a02d255fa" style="width: 100.0%; height: 100.0%;">Pond: khatasarang, Infestation: Clear water surface</div>`)[0];
+                popup_f9d87a18910356fbabdd786ac1eda5e6.setContent(html_c3ec6a3e7ab14ee537c0069a02d255fa);
+            
+        
+
+        marker_742b184f5c330700e123e6f4ad0c8d93.bindPopup(popup_f9d87a18910356fbabdd786ac1eda5e6)
+        ;
+
+        
+    
+    
+                marker_742b184f5c330700e123e6f4ad0c8d93.setIcon(icon_39579423674c683727e8c342e80aaf2c);
+            
+    
+            var marker_a5a6098e3aff7ac5a58448491e13443a = L.marker(
+                [20.07561, 85.81298],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_f45e8994b6005d3bdf023369183935d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d228019298f09481791bdd65b79bfd1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_174b8da9d58cf4ff49a265094fdd7308 = $(`<div id="html_174b8da9d58cf4ff49a265094fdd7308" style="width: 100.0%; height: 100.0%;">Pond: khatasarang, Infestation: Clear water surface</div>`)[0];
+                popup_d228019298f09481791bdd65b79bfd1d.setContent(html_174b8da9d58cf4ff49a265094fdd7308);
+            
+        
+
+        marker_a5a6098e3aff7ac5a58448491e13443a.bindPopup(popup_d228019298f09481791bdd65b79bfd1d)
+        ;
+
+        
+    
+    
+                marker_a5a6098e3aff7ac5a58448491e13443a.setIcon(icon_f45e8994b6005d3bdf023369183935d6);
+            
+    
+            var marker_97dfc5327037c30f2d676688e2474355 = L.marker(
+                [20.07961, 85.82265],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_54642a4504783443095dc5b31dd41398 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da81c2de0fa6e500789c7b0e12cfdb26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19d16ae6d0feb17ed37308128268bfab = $(`<div id="html_19d16ae6d0feb17ed37308128268bfab" style="width: 100.0%; height: 100.0%;">Pond: bantalasingha, Infestation: Duckweed</div>`)[0];
+                popup_da81c2de0fa6e500789c7b0e12cfdb26.setContent(html_19d16ae6d0feb17ed37308128268bfab);
+            
+        
+
+        marker_97dfc5327037c30f2d676688e2474355.bindPopup(popup_da81c2de0fa6e500789c7b0e12cfdb26)
+        ;
+
+        
+    
+    
+                marker_97dfc5327037c30f2d676688e2474355.setIcon(icon_54642a4504783443095dc5b31dd41398);
+            
+    
+            var marker_02b63a96e7e3ea15dbbf776f7db47a3f = L.marker(
+                [20.07924, 85.82984],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0f89a657671fecca4499c2d09dedc2ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0bc5d8376be6bd0ab4e751e77ebadf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b126c285f5a8fb05ebabd7a929e8ebd = $(`<div id="html_4b126c285f5a8fb05ebabd7a929e8ebd" style="width: 100.0%; height: 100.0%;">Pond: bantalasingha, Infestation: Water hyacinth</div>`)[0];
+                popup_d0bc5d8376be6bd0ab4e751e77ebadf5.setContent(html_4b126c285f5a8fb05ebabd7a929e8ebd);
+            
+        
+
+        marker_02b63a96e7e3ea15dbbf776f7db47a3f.bindPopup(popup_d0bc5d8376be6bd0ab4e751e77ebadf5)
+        ;
+
+        
+    
+    
+                marker_02b63a96e7e3ea15dbbf776f7db47a3f.setIcon(icon_0f89a657671fecca4499c2d09dedc2ee);
+            
+    
+            var marker_d172428481dece622044445d81b216ba = L.marker(
+                [20.0818, 85.83152],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_4bcd8733aa5de4857190a5f736a44289 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5af76cf622a904eece2af8a2cb3d2e46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7beef447a4f828d621a2bb30bf5a1c8d = $(`<div id="html_7beef447a4f828d621a2bb30bf5a1c8d" style="width: 100.0%; height: 100.0%;">Pond: danda mukundapur, Infestation: Clear water surface</div>`)[0];
+                popup_5af76cf622a904eece2af8a2cb3d2e46.setContent(html_7beef447a4f828d621a2bb30bf5a1c8d);
+            
+        
+
+        marker_d172428481dece622044445d81b216ba.bindPopup(popup_5af76cf622a904eece2af8a2cb3d2e46)
+        ;
+
+        
+    
+    
+                marker_d172428481dece622044445d81b216ba.setIcon(icon_4bcd8733aa5de4857190a5f736a44289);
+            
+    
+            var marker_318c3bce0f76ea684cfb42204aba8400 = L.marker(
+                [20.12711, 85.84003],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_cb2953c4c5e7557d169484223a4ec287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0987b5ce30b7cb77a7930bca814afcd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52d551299d91a38d9e6383779f08183b = $(`<div id="html_52d551299d91a38d9e6383779f08183b" style="width: 100.0%; height: 100.0%;">Pond: dauda, Infestation: Clear water surface</div>`)[0];
+                popup_0987b5ce30b7cb77a7930bca814afcd7.setContent(html_52d551299d91a38d9e6383779f08183b);
+            
+        
+
+        marker_318c3bce0f76ea684cfb42204aba8400.bindPopup(popup_0987b5ce30b7cb77a7930bca814afcd7)
+        ;
+
+        
+    
+    
+                marker_318c3bce0f76ea684cfb42204aba8400.setIcon(icon_cb2953c4c5e7557d169484223a4ec287);
+            
+    
+            var marker_44376fbfd2c48a41da04399ecf5c287e = L.marker(
+                [19.897504, 85.79597],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_57bf58cfd6747321ea408078afc0664d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36ba50eec8a91a5fbdd721f5694446e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c9d6d5849a014381f910353b31bf80e = $(`<div id="html_3c9d6d5849a014381f910353b31bf80e" style="width: 100.0%; height: 100.0%;">Pond: tikarasodabha, Infestation: Water hyacinth</div>`)[0];
+                popup_36ba50eec8a91a5fbdd721f5694446e9.setContent(html_3c9d6d5849a014381f910353b31bf80e);
+            
+        
+
+        marker_44376fbfd2c48a41da04399ecf5c287e.bindPopup(popup_36ba50eec8a91a5fbdd721f5694446e9)
+        ;
+
+        
+    
+    
+                marker_44376fbfd2c48a41da04399ecf5c287e.setIcon(icon_57bf58cfd6747321ea408078afc0664d);
+            
+    
+            var marker_ffac4203f83f49676ae323bd5104f602 = L.marker(
+                [19.885911, 85.722114],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_939bd6af2ff58b38612b17540803e3c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96ae43e94128c5f6fd249d7889d27785 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef154304a2067647a80fad01bd7088d3 = $(`<div id="html_ef154304a2067647a80fad01bd7088d3" style="width: 100.0%; height: 100.0%;">Pond: kanheibidyadharpur, Infestation: Water hyacinth</div>`)[0];
+                popup_96ae43e94128c5f6fd249d7889d27785.setContent(html_ef154304a2067647a80fad01bd7088d3);
+            
+        
+
+        marker_ffac4203f83f49676ae323bd5104f602.bindPopup(popup_96ae43e94128c5f6fd249d7889d27785)
+        ;
+
+        
+    
+    
+                marker_ffac4203f83f49676ae323bd5104f602.setIcon(icon_939bd6af2ff58b38612b17540803e3c1);
+            
+    
+            var marker_536a0aa7d6583210f13b4752aa2cd003 = L.marker(
+                [19.883944, 85.720176],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_312b29138389961a85916c87957381f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d4dda1866a627c2007de5ef13c06958 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3768b0f14ddc1ceff2b09a96075d9df3 = $(`<div id="html_3768b0f14ddc1ceff2b09a96075d9df3" style="width: 100.0%; height: 100.0%;">Pond: kanheibidyadharpur, Infestation: Water hyacinth</div>`)[0];
+                popup_1d4dda1866a627c2007de5ef13c06958.setContent(html_3768b0f14ddc1ceff2b09a96075d9df3);
+            
+        
+
+        marker_536a0aa7d6583210f13b4752aa2cd003.bindPopup(popup_1d4dda1866a627c2007de5ef13c06958)
+        ;
+
+        
+    
+    
+                marker_536a0aa7d6583210f13b4752aa2cd003.setIcon(icon_312b29138389961a85916c87957381f6);
+            
+    
+            var marker_400b7df3ba2cdb86a1b877118a33040d = L.marker(
+                [19.879514, 85.729004],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_c0dd39492ca58ce398f301bfdb7a415e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1775f15678a6e66ec3b5dbb980be7b9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1363602229179e7b437086ab25ebef9d = $(`<div id="html_1363602229179e7b437086ab25ebef9d" style="width: 100.0%; height: 100.0%;">Pond: kurunti, Infestation: Water hyacinth</div>`)[0];
+                popup_1775f15678a6e66ec3b5dbb980be7b9a.setContent(html_1363602229179e7b437086ab25ebef9d);
+            
+        
+
+        marker_400b7df3ba2cdb86a1b877118a33040d.bindPopup(popup_1775f15678a6e66ec3b5dbb980be7b9a)
+        ;
+
+        
+    
+    
+                marker_400b7df3ba2cdb86a1b877118a33040d.setIcon(icon_c0dd39492ca58ce398f301bfdb7a415e);
+            
+    
+            var marker_74a55136129625f354a8c40ca2137e74 = L.marker(
+                [19.865298, 85.701697],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_d541f099ab8124025e56c2f94b3c6bd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5eaa17b7473476aefde4a071deeb454a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a45fcccf8f571aab3fca8bc3619bb73 = $(`<div id="html_6a45fcccf8f571aab3fca8bc3619bb73" style="width: 100.0%; height: 100.0%;">Pond: krishanasaranpur, Infestation: Water hyacinth</div>`)[0];
+                popup_5eaa17b7473476aefde4a071deeb454a.setContent(html_6a45fcccf8f571aab3fca8bc3619bb73);
+            
+        
+
+        marker_74a55136129625f354a8c40ca2137e74.bindPopup(popup_5eaa17b7473476aefde4a071deeb454a)
+        ;
+
+        
+    
+    
+                marker_74a55136129625f354a8c40ca2137e74.setIcon(icon_d541f099ab8124025e56c2f94b3c6bd2);
+            
+    
+            var marker_262039c997a60aa9b95e5a674648c2dd = L.marker(
+                [19.865273, 85.701607],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_01a73a7561609e259f6764294b727281 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_18441685140d70748d46d5f64a76b590 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21ff22e2fc225b7db0be40bb59a0f3f8 = $(`<div id="html_21ff22e2fc225b7db0be40bb59a0f3f8" style="width: 100.0%; height: 100.0%;">Pond: krishanasaranpur, Infestation: Water hyacinth</div>`)[0];
+                popup_18441685140d70748d46d5f64a76b590.setContent(html_21ff22e2fc225b7db0be40bb59a0f3f8);
+            
+        
+
+        marker_262039c997a60aa9b95e5a674648c2dd.bindPopup(popup_18441685140d70748d46d5f64a76b590)
+        ;
+
+        
+    
+    
+                marker_262039c997a60aa9b95e5a674648c2dd.setIcon(icon_01a73a7561609e259f6764294b727281);
+            
+    
+            var marker_bfe6af854181a27f78d8ef3ed36ff6a6 = L.marker(
+                [19.865129, 85.701487],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_02d001940225ac888bca73763565813a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f79ac80b97e4859713d3b22e6d1db411 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eeb675f8a802699d943a7cf1f10c6482 = $(`<div id="html_eeb675f8a802699d943a7cf1f10c6482" style="width: 100.0%; height: 100.0%;">Pond: krishanasaranpur, Infestation: Water hyacinth</div>`)[0];
+                popup_f79ac80b97e4859713d3b22e6d1db411.setContent(html_eeb675f8a802699d943a7cf1f10c6482);
+            
+        
+
+        marker_bfe6af854181a27f78d8ef3ed36ff6a6.bindPopup(popup_f79ac80b97e4859713d3b22e6d1db411)
+        ;
+
+        
+    
+    
+                marker_bfe6af854181a27f78d8ef3ed36ff6a6.setIcon(icon_02d001940225ac888bca73763565813a);
+            
+    
+            var marker_7a37c3cb6fad3c3827d2bdb12dea9e35 = L.marker(
+                [19.89749, 85.81082],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0e9db48ba859bca23e9da9d1e3cb62c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ecc47400f1f810a87c3770f769a7e49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d75fedc21b67fc21327d8ff140f3c3a2 = $(`<div id="html_d75fedc21b67fc21327d8ff140f3c3a2" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_7ecc47400f1f810a87c3770f769a7e49.setContent(html_d75fedc21b67fc21327d8ff140f3c3a2);
+            
+        
+
+        marker_7a37c3cb6fad3c3827d2bdb12dea9e35.bindPopup(popup_7ecc47400f1f810a87c3770f769a7e49)
+        ;
+
+        
+    
+    
+                marker_7a37c3cb6fad3c3827d2bdb12dea9e35.setIcon(icon_0e9db48ba859bca23e9da9d1e3cb62c2);
+            
+    
+            var marker_4024faa23835f1fe627954c3a85af0a4 = L.marker(
+                [19.89732, 85.81067],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_15cc594f8b0e8ee923a3962eb2c14845 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_437cfed734d13c668602caf1ce63326a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c463396edf1eca0146544bb96c4f3e0c = $(`<div id="html_c463396edf1eca0146544bb96c4f3e0c" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_437cfed734d13c668602caf1ce63326a.setContent(html_c463396edf1eca0146544bb96c4f3e0c);
+            
+        
+
+        marker_4024faa23835f1fe627954c3a85af0a4.bindPopup(popup_437cfed734d13c668602caf1ce63326a)
+        ;
+
+        
+    
+    
+                marker_4024faa23835f1fe627954c3a85af0a4.setIcon(icon_15cc594f8b0e8ee923a3962eb2c14845);
+            
+    
+            var marker_0764d9aeec0daf721ccae26478b3e711 = L.marker(
+                [19.89262, 85.8072],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_504a50cab25baf944133d59966d3c29d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4bf41d8e2310434792b923e6b840ca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87e0ba895c5bb5e7398331f5610a42c8 = $(`<div id="html_87e0ba895c5bb5e7398331f5610a42c8" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_d4bf41d8e2310434792b923e6b840ca1.setContent(html_87e0ba895c5bb5e7398331f5610a42c8);
+            
+        
+
+        marker_0764d9aeec0daf721ccae26478b3e711.bindPopup(popup_d4bf41d8e2310434792b923e6b840ca1)
+        ;
+
+        
+    
+    
+                marker_0764d9aeec0daf721ccae26478b3e711.setIcon(icon_504a50cab25baf944133d59966d3c29d);
+            
+    
+            var marker_fc0a79fc238fc707a3b07e2d494b57db = L.marker(
+                [19.88706, 85.81204],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_408625d7eba4db7e06544927e65a68b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61e5fe41daf4ffc72feffac5821241c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21d8d4909293215088795e2c1a3781d5 = $(`<div id="html_21d8d4909293215088795e2c1a3781d5" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_61e5fe41daf4ffc72feffac5821241c0.setContent(html_21d8d4909293215088795e2c1a3781d5);
+            
+        
+
+        marker_fc0a79fc238fc707a3b07e2d494b57db.bindPopup(popup_61e5fe41daf4ffc72feffac5821241c0)
+        ;
+
+        
+    
+    
+                marker_fc0a79fc238fc707a3b07e2d494b57db.setIcon(icon_408625d7eba4db7e06544927e65a68b7);
+            
+    
+            var marker_e534ca34d595c0257fbc3a3de6207b0c = L.marker(
+                [19.88871, 85.81716],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_e8d3a764693b3679b87e9100fececf6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75ed1d93b638fcd96f669ab752df77aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2da33eed8ad10e0954492f3b9a80fe9 = $(`<div id="html_b2da33eed8ad10e0954492f3b9a80fe9" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: clear water surface</div>`)[0];
+                popup_75ed1d93b638fcd96f669ab752df77aa.setContent(html_b2da33eed8ad10e0954492f3b9a80fe9);
+            
+        
+
+        marker_e534ca34d595c0257fbc3a3de6207b0c.bindPopup(popup_75ed1d93b638fcd96f669ab752df77aa)
+        ;
+
+        
+    
+    
+                marker_e534ca34d595c0257fbc3a3de6207b0c.setIcon(icon_e8d3a764693b3679b87e9100fececf6e);
+            
+    
+            var marker_184aac9eb9f1a30d5e89ee6aaa370736 = L.marker(
+                [19.87795, 85.81641],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_29402949d8ef0517ca4e2182fbdb11ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e17dc2a0b61c1ec6de126704a385ca4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_970aa6e90f5da4121771850a9c2b6f12 = $(`<div id="html_970aa6e90f5da4121771850a9c2b6f12" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Clear water surface</div>`)[0];
+                popup_e17dc2a0b61c1ec6de126704a385ca4d.setContent(html_970aa6e90f5da4121771850a9c2b6f12);
+            
+        
+
+        marker_184aac9eb9f1a30d5e89ee6aaa370736.bindPopup(popup_e17dc2a0b61c1ec6de126704a385ca4d)
+        ;
+
+        
+    
+    
+                marker_184aac9eb9f1a30d5e89ee6aaa370736.setIcon(icon_29402949d8ef0517ca4e2182fbdb11ef);
+            
+    
+            var marker_c2ad9aac371a46d6815bdf85da324f44 = L.marker(
+                [19.87864, 85.81672],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_4ccc9b2ace9f54565d98756d486c864c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_206abc76c3c8aa23186ff10ffba00e56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cecc43d176250ee1d6d4a3915aee243b = $(`<div id="html_cecc43d176250ee1d6d4a3915aee243b" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_206abc76c3c8aa23186ff10ffba00e56.setContent(html_cecc43d176250ee1d6d4a3915aee243b);
+            
+        
+
+        marker_c2ad9aac371a46d6815bdf85da324f44.bindPopup(popup_206abc76c3c8aa23186ff10ffba00e56)
+        ;
+
+        
+    
+    
+                marker_c2ad9aac371a46d6815bdf85da324f44.setIcon(icon_4ccc9b2ace9f54565d98756d486c864c);
+            
+    
+            var marker_2978b716b8bb08c25594af0ffc02682b = L.marker(
+                [19.88962, 85.82096],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_75237c0c95d856cb1114026ead76130b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5c9cc6af69294ffc16b6b8ee90cddb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_512153c75a181c9c2b5cc490861dc7db = $(`<div id="html_512153c75a181c9c2b5cc490861dc7db" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_a5c9cc6af69294ffc16b6b8ee90cddb6.setContent(html_512153c75a181c9c2b5cc490861dc7db);
+            
+        
+
+        marker_2978b716b8bb08c25594af0ffc02682b.bindPopup(popup_a5c9cc6af69294ffc16b6b8ee90cddb6)
+        ;
+
+        
+    
+    
+                marker_2978b716b8bb08c25594af0ffc02682b.setIcon(icon_75237c0c95d856cb1114026ead76130b);
+            
+    
+            var marker_d98fa0985064725a3f661b719cd11808 = L.marker(
+                [19.8884, 85.82151],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_b3883fe73a61cc573a03bfc76dfc49a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc9af74f68a40e7e1395bf6b27f0a38e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05b992883f494de9891e71f49af003e7 = $(`<div id="html_05b992883f494de9891e71f49af003e7" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: duckweed</div>`)[0];
+                popup_dc9af74f68a40e7e1395bf6b27f0a38e.setContent(html_05b992883f494de9891e71f49af003e7);
+            
+        
+
+        marker_d98fa0985064725a3f661b719cd11808.bindPopup(popup_dc9af74f68a40e7e1395bf6b27f0a38e)
+        ;
+
+        
+    
+    
+                marker_d98fa0985064725a3f661b719cd11808.setIcon(icon_b3883fe73a61cc573a03bfc76dfc49a9);
+            
+    
+            var marker_958a0469e9137dba85c7a7bd0f850975 = L.marker(
+                [19.8885, 85.82156],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_02a6be410a57635f613d833330feb340 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d4819773ac595bcada2f4462c5d338e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa2ffe5e07e588b98efaed4650a4812b = $(`<div id="html_aa2ffe5e07e588b98efaed4650a4812b" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Clear water surface</div>`)[0];
+                popup_0d4819773ac595bcada2f4462c5d338e.setContent(html_aa2ffe5e07e588b98efaed4650a4812b);
+            
+        
+
+        marker_958a0469e9137dba85c7a7bd0f850975.bindPopup(popup_0d4819773ac595bcada2f4462c5d338e)
+        ;
+
+        
+    
+    
+                marker_958a0469e9137dba85c7a7bd0f850975.setIcon(icon_02a6be410a57635f613d833330feb340);
+            
+    
+            var marker_a952d562cf99f7877ef73e3820476bb3 = L.marker(
+                [19.88736, 85.82248],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_68320ab79157f329664813997d48301e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_770a6d17e0b397cb5065f46d1ba446d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_776ba52264e777120ff3341ab900c06f = $(`<div id="html_776ba52264e777120ff3341ab900c06f" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Clear water surface</div>`)[0];
+                popup_770a6d17e0b397cb5065f46d1ba446d9.setContent(html_776ba52264e777120ff3341ab900c06f);
+            
+        
+
+        marker_a952d562cf99f7877ef73e3820476bb3.bindPopup(popup_770a6d17e0b397cb5065f46d1ba446d9)
+        ;
+
+        
+    
+    
+                marker_a952d562cf99f7877ef73e3820476bb3.setIcon(icon_68320ab79157f329664813997d48301e);
+            
+    
+            var marker_eacf6fd4af08103c5b52616b334c7c5e = L.marker(
+                [19.88779, 85.82349],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_484aa1d83ef6f4babcb3ca6218bad6ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a92230a2cb1d484c2958ae8f31d55e09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_548fdd2b9e98a044d47596dea4f69839 = $(`<div id="html_548fdd2b9e98a044d47596dea4f69839" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Duckweed</div>`)[0];
+                popup_a92230a2cb1d484c2958ae8f31d55e09.setContent(html_548fdd2b9e98a044d47596dea4f69839);
+            
+        
+
+        marker_eacf6fd4af08103c5b52616b334c7c5e.bindPopup(popup_a92230a2cb1d484c2958ae8f31d55e09)
+        ;
+
+        
+    
+    
+                marker_eacf6fd4af08103c5b52616b334c7c5e.setIcon(icon_484aa1d83ef6f4babcb3ca6218bad6ba);
+            
+    
+            var marker_3c0efebb5f095bb219fa241c3a936742 = L.marker(
+                [19.88793, 85.8237],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_8f1e36551525e77a36bcd0cd21697983 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a6db0162acf92c90d6e020d15b52784a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d75335c4adf519eea1854b4d4e2c5fb5 = $(`<div id="html_d75335c4adf519eea1854b4d4e2c5fb5" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Clear water surface</div>`)[0];
+                popup_a6db0162acf92c90d6e020d15b52784a.setContent(html_d75335c4adf519eea1854b4d4e2c5fb5);
+            
+        
+
+        marker_3c0efebb5f095bb219fa241c3a936742.bindPopup(popup_a6db0162acf92c90d6e020d15b52784a)
+        ;
+
+        
+    
+    
+                marker_3c0efebb5f095bb219fa241c3a936742.setIcon(icon_8f1e36551525e77a36bcd0cd21697983);
+            
+    
+            var marker_47a2de26abb65b2d8d0e6d92535b7761 = L.marker(
+                [19.88814, 85.82542],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_9a12590aef087028307f2e45eb219e75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5680f7d783d3d6e2379a800a552d684 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de54b74ddef040d66180c8bb66a93b8c = $(`<div id="html_de54b74ddef040d66180c8bb66a93b8c" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_c5680f7d783d3d6e2379a800a552d684.setContent(html_de54b74ddef040d66180c8bb66a93b8c);
+            
+        
+
+        marker_47a2de26abb65b2d8d0e6d92535b7761.bindPopup(popup_c5680f7d783d3d6e2379a800a552d684)
+        ;
+
+        
+    
+    
+                marker_47a2de26abb65b2d8d0e6d92535b7761.setIcon(icon_9a12590aef087028307f2e45eb219e75);
+            
+    
+            var marker_bec2cd5799ac066fd992b98a30ddadce = L.marker(
+                [19.88723, 85.82341],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_701ac0fb0f05d94afca9ef99dfe04685 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f890d0cd197c946f6171b0cebeeab9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_deca13767fdeaf1b2d732568df7f69e5 = $(`<div id="html_deca13767fdeaf1b2d732568df7f69e5" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_4f890d0cd197c946f6171b0cebeeab9b.setContent(html_deca13767fdeaf1b2d732568df7f69e5);
+            
+        
+
+        marker_bec2cd5799ac066fd992b98a30ddadce.bindPopup(popup_4f890d0cd197c946f6171b0cebeeab9b)
+        ;
+
+        
+    
+    
+                marker_bec2cd5799ac066fd992b98a30ddadce.setIcon(icon_701ac0fb0f05d94afca9ef99dfe04685);
+            
+    
+            var marker_52628bf715f3d5bde2c67c5e23bb9a90 = L.marker(
+                [19.898822, 85.74362],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_06422c7f48dc60eb9e25afa5fd740dd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b49f0c78fd877f9288b9daf6454b1f30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46bf4e98c58216c5088b713ed07021a5 = $(`<div id="html_46bf4e98c58216c5088b713ed07021a5" style="width: 100.0%; height: 100.0%;">Pond: bijaya ramachandrapur, Infestation: Water hyacinth</div>`)[0];
+                popup_b49f0c78fd877f9288b9daf6454b1f30.setContent(html_46bf4e98c58216c5088b713ed07021a5);
+            
+        
+
+        marker_52628bf715f3d5bde2c67c5e23bb9a90.bindPopup(popup_b49f0c78fd877f9288b9daf6454b1f30)
+        ;
+
+        
+    
+    
+                marker_52628bf715f3d5bde2c67c5e23bb9a90.setIcon(icon_06422c7f48dc60eb9e25afa5fd740dd8);
+            
+    
+            var marker_d055d7a952db808f8f35d261748755dc = L.marker(
+                [19.891364, 85.816552],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_70859d2668aecf12ad08e68bfbd6c927 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e4391ec6c23a95712ee54e51b09ffbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6a17bd7cc3a620a660673fe68141657 = $(`<div id="html_a6a17bd7cc3a620a660673fe68141657" style="width: 100.0%; height: 100.0%;">Pond: chandanpur, Infestation: Water hyacinth</div>`)[0];
+                popup_2e4391ec6c23a95712ee54e51b09ffbf.setContent(html_a6a17bd7cc3a620a660673fe68141657);
+            
+        
+
+        marker_d055d7a952db808f8f35d261748755dc.bindPopup(popup_2e4391ec6c23a95712ee54e51b09ffbf)
+        ;
+
+        
+    
+    
+                marker_d055d7a952db808f8f35d261748755dc.setIcon(icon_70859d2668aecf12ad08e68bfbd6c927);
+            
+    
+            var marker_15e57854bcac738eafad5c5aade435f1 = L.marker(
+                [19.93939, 85.82364],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_bf0e688f6f455682e7c4bf0b3754949f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_924f06cbb95ee5ee12c3e488ec202e1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d966d662dd046abc7fda665895869ed4 = $(`<div id="html_d966d662dd046abc7fda665895869ed4" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_924f06cbb95ee5ee12c3e488ec202e1c.setContent(html_d966d662dd046abc7fda665895869ed4);
+            
+        
+
+        marker_15e57854bcac738eafad5c5aade435f1.bindPopup(popup_924f06cbb95ee5ee12c3e488ec202e1c)
+        ;
+
+        
+    
+    
+                marker_15e57854bcac738eafad5c5aade435f1.setIcon(icon_bf0e688f6f455682e7c4bf0b3754949f);
+            
+    
+            var marker_c9df24684e400aa6ec134a8c60680682 = L.marker(
+                [19.9361, 85.82516],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_9ce00735d9e1dba65e10480b73129966 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98ef654ebc94d192365f0f4d162c5157 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40c8cc11eaf1273c4976d2766ec8fb7f = $(`<div id="html_40c8cc11eaf1273c4976d2766ec8fb7f" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_98ef654ebc94d192365f0f4d162c5157.setContent(html_40c8cc11eaf1273c4976d2766ec8fb7f);
+            
+        
+
+        marker_c9df24684e400aa6ec134a8c60680682.bindPopup(popup_98ef654ebc94d192365f0f4d162c5157)
+        ;
+
+        
+    
+    
+                marker_c9df24684e400aa6ec134a8c60680682.setIcon(icon_9ce00735d9e1dba65e10480b73129966);
+            
+    
+            var marker_2cb5d1af30e5bab2c5910c3731211b3a = L.marker(
+                [19.94053, 85.82375],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_8fd25756182c23fd3d403086713b2407 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1018d19baa863face85a33e19ac6e9d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42e5c3618f27553aaa50a3137d35f1e5 = $(`<div id="html_42e5c3618f27553aaa50a3137d35f1e5" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Duckweed</div>`)[0];
+                popup_1018d19baa863face85a33e19ac6e9d9.setContent(html_42e5c3618f27553aaa50a3137d35f1e5);
+            
+        
+
+        marker_2cb5d1af30e5bab2c5910c3731211b3a.bindPopup(popup_1018d19baa863face85a33e19ac6e9d9)
+        ;
+
+        
+    
+    
+                marker_2cb5d1af30e5bab2c5910c3731211b3a.setIcon(icon_8fd25756182c23fd3d403086713b2407);
+            
+    
+            var marker_5c043f41f469aaff7f22f5fbcae65959 = L.marker(
+                [19.94185, 85.82469],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_64686427c201712f8fba2b7bdf7375f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4ce360ef23e9b79c616398f1d7c2943 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6544c1cfcd0404bb5e77304ff52d2f3 = $(`<div id="html_b6544c1cfcd0404bb5e77304ff52d2f3" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_d4ce360ef23e9b79c616398f1d7c2943.setContent(html_b6544c1cfcd0404bb5e77304ff52d2f3);
+            
+        
+
+        marker_5c043f41f469aaff7f22f5fbcae65959.bindPopup(popup_d4ce360ef23e9b79c616398f1d7c2943)
+        ;
+
+        
+    
+    
+                marker_5c043f41f469aaff7f22f5fbcae65959.setIcon(icon_64686427c201712f8fba2b7bdf7375f1);
+            
+    
+            var marker_7d1f314377f7e9a0be187d0ac776b178 = L.marker(
+                [19.93712, 85.81943],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_60edca09d5c48fc9c7964dfa788f78a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba0bacd4e736891dc8722b6e8f74b9b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d13378f7630e5d3a64e11e2da82812d = $(`<div id="html_0d13378f7630e5d3a64e11e2da82812d" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Clear water surface</div>`)[0];
+                popup_ba0bacd4e736891dc8722b6e8f74b9b5.setContent(html_0d13378f7630e5d3a64e11e2da82812d);
+            
+        
+
+        marker_7d1f314377f7e9a0be187d0ac776b178.bindPopup(popup_ba0bacd4e736891dc8722b6e8f74b9b5)
+        ;
+
+        
+    
+    
+                marker_7d1f314377f7e9a0be187d0ac776b178.setIcon(icon_60edca09d5c48fc9c7964dfa788f78a3);
+            
+    
+            var marker_74cd8f79d0c61e85b85dce63daaa196d = L.marker(
+                [19.92444, 85.81802],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_a6e5032da014240b40cecfde565b9404 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bdc62f7748326de52c760fa04e88f995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53fde62b57b20b81aeb531cf28895989 = $(`<div id="html_53fde62b57b20b81aeb531cf28895989" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Clear water surface</div>`)[0];
+                popup_bdc62f7748326de52c760fa04e88f995.setContent(html_53fde62b57b20b81aeb531cf28895989);
+            
+        
+
+        marker_74cd8f79d0c61e85b85dce63daaa196d.bindPopup(popup_bdc62f7748326de52c760fa04e88f995)
+        ;
+
+        
+    
+    
+                marker_74cd8f79d0c61e85b85dce63daaa196d.setIcon(icon_a6e5032da014240b40cecfde565b9404);
+            
+    
+            var marker_4b7baf9b3c866cf9f54450234507f83d = L.marker(
+                [19.9168, 85.81826],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_31ba7c6da16b9fa520ab6c7e07dba415 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44e3dcd394fc4080471d98eb28d78434 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d749c53686a3f0d7065820103b2fb562 = $(`<div id="html_d749c53686a3f0d7065820103b2fb562" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_44e3dcd394fc4080471d98eb28d78434.setContent(html_d749c53686a3f0d7065820103b2fb562);
+            
+        
+
+        marker_4b7baf9b3c866cf9f54450234507f83d.bindPopup(popup_44e3dcd394fc4080471d98eb28d78434)
+        ;
+
+        
+    
+    
+                marker_4b7baf9b3c866cf9f54450234507f83d.setIcon(icon_31ba7c6da16b9fa520ab6c7e07dba415);
+            
+    
+            var marker_1c31bdfea91af71023ee1a6b3ccd3074 = L.marker(
+                [19.92126, 85.82534],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_8c56af741114b64aee6f5bc77ad1ed96 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_10631ef40540e9467f749d6e2b9b84cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ac8a0618dda127f9ea4972635e0acfd = $(`<div id="html_5ac8a0618dda127f9ea4972635e0acfd" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Duckweed</div>`)[0];
+                popup_10631ef40540e9467f749d6e2b9b84cf.setContent(html_5ac8a0618dda127f9ea4972635e0acfd);
+            
+        
+
+        marker_1c31bdfea91af71023ee1a6b3ccd3074.bindPopup(popup_10631ef40540e9467f749d6e2b9b84cf)
+        ;
+
+        
+    
+    
+                marker_1c31bdfea91af71023ee1a6b3ccd3074.setIcon(icon_8c56af741114b64aee6f5bc77ad1ed96);
+            
+    
+            var marker_efab4084d980caca0c945b9582086045 = L.marker(
+                [19.91672, 85.81863],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_b8d81e3328ee4d7c042a5c2bd6e4a191 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92b8f212f0f3fd257f830e29cc47eda4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_159a8bb27edaf173c4a56e7547893488 = $(`<div id="html_159a8bb27edaf173c4a56e7547893488" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_92b8f212f0f3fd257f830e29cc47eda4.setContent(html_159a8bb27edaf173c4a56e7547893488);
+            
+        
+
+        marker_efab4084d980caca0c945b9582086045.bindPopup(popup_92b8f212f0f3fd257f830e29cc47eda4)
+        ;
+
+        
+    
+    
+                marker_efab4084d980caca0c945b9582086045.setIcon(icon_b8d81e3328ee4d7c042a5c2bd6e4a191);
+            
+    
+            var marker_fb85d1b0745d68e3ba4629debe2f01da = L.marker(
+                [19.92674, 85.82382],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_938589b8d883da57742f85b15bf7e919 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66d47f399c778adb2082108364737530 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27997f523a023941906d56bc6052e888 = $(`<div id="html_27997f523a023941906d56bc6052e888" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_66d47f399c778adb2082108364737530.setContent(html_27997f523a023941906d56bc6052e888);
+            
+        
+
+        marker_fb85d1b0745d68e3ba4629debe2f01da.bindPopup(popup_66d47f399c778adb2082108364737530)
+        ;
+
+        
+    
+    
+                marker_fb85d1b0745d68e3ba4629debe2f01da.setIcon(icon_938589b8d883da57742f85b15bf7e919);
+            
+    
+            var marker_b7cc554e9f0d6859bd01a0cd05530dc9 = L.marker(
+                [19.92784, 85.82562],
+                {
+}
+            ).addTo(map_021f3d0984bda730780b5afeb1bf6d1f);
+        
+    
+            var icon_0b7bdbc43c74d8554f8b2be54437519b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3511cab2a5e5aa7e10338ec1a054815e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51a50896ddfd46380bee942e92154601 = $(`<div id="html_51a50896ddfd46380bee942e92154601" style="width: 100.0%; height: 100.0%;">Pond: jaypura, Infestation: Water hyacinth</div>`)[0];
+                popup_3511cab2a5e5aa7e10338ec1a054815e.setContent(html_51a50896ddfd46380bee942e92154601);
+            
+        
+
+        marker_b7cc554e9f0d6859bd01a0cd05530dc9.bindPopup(popup_3511cab2a5e5aa7e10338ec1a054815e)
+        ;
+
+        
+    
+    
+                marker_b7cc554e9f0d6859bd01a0cd05530dc9.setIcon(icon_0b7bdbc43c74d8554f8b2be54437519b);
+            
+</script>
+</html>
