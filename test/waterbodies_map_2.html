@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_db24735046545637c6fff5d12bff4d39 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_db24735046545637c6fff5d12bff4d39" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_db24735046545637c6fff5d12bff4d39 = L.map(
+                "map_db24735046545637c6fff5d12bff4d39",
+                {
+                    center: [18.356958249999998, 79.318048],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3a2f5df4c6463cef366264740239ffa5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3a2f5df4c6463cef366264740239ffa5.addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var tile_layer_deea78d06ca48da852f26b636e1776c6 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_deea78d06ca48da852f26b636e1776c6.addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var marker_b8cfc774163fbd69746b18f3fa50f9d0 = L.marker(
+                [18.884485, 79.443937],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_c959f2cafce3be24f2433cce9d937e9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c06b8e756085a9ed16a56c1dd8d75fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b27fd635674aed52f369b548d8d596c = $(`<div id="html_4b27fd635674aed52f369b548d8d596c" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Mancherial<br><b>ULB:</b> Mancherial<br><b>Lat:</b> 18.884485<br><b>Lon:</b> 79.443937</div></div>`)[0];
+                popup_4c06b8e756085a9ed16a56c1dd8d75fe.setContent(html_4b27fd635674aed52f369b548d8d596c);
+            
+        
+
+        marker_b8cfc774163fbd69746b18f3fa50f9d0.bindPopup(popup_4c06b8e756085a9ed16a56c1dd8d75fe)
+        ;
+
+        
+    
+    
+                marker_b8cfc774163fbd69746b18f3fa50f9d0.setIcon(icon_c959f2cafce3be24f2433cce9d937e9a);
+            
+    
+            var marker_8ab5717045c9b6f6ab5bcdb23688eade = L.marker(
+                [18.956175, 79.076934],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_3fb2ba0ea54cb64ccc6277773853a9b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9dc950bd4947ad076b7e63ab43a3ba09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c42f802b00255c05949fbae425985234 = $(`<div id="html_c42f802b00255c05949fbae425985234" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Jagitial<br><b>ULB:</b> Dharmapuri<br><b>Lat:</b> 18.956175<br><b>Lon:</b> 79.076934</div></div>`)[0];
+                popup_9dc950bd4947ad076b7e63ab43a3ba09.setContent(html_c42f802b00255c05949fbae425985234);
+            
+        
+
+        marker_8ab5717045c9b6f6ab5bcdb23688eade.bindPopup(popup_9dc950bd4947ad076b7e63ab43a3ba09)
+        ;
+
+        
+    
+    
+                marker_8ab5717045c9b6f6ab5bcdb23688eade.setIcon(icon_3fb2ba0ea54cb64ccc6277773853a9b2);
+            
+    
+            var marker_d45f934478ff1a9616f183e5038d3fef = L.marker(
+                [19.0481, 78.6454],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_c145d51a0c98e0c5e1853705a4a8ee6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d3eb5e7dcf0dae17988cf0bf0af3dd3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4498b3bc4034cdb435759e1f4e60e30 = $(`<div id="html_d4498b3bc4034cdb435759e1f4e60e30" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Nirmal<br><b>ULB:</b> Khanapur<br><b>Lat:</b> 19.0481<br><b>Lon:</b> 78.6454</div></div>`)[0];
+                popup_1d3eb5e7dcf0dae17988cf0bf0af3dd3.setContent(html_d4498b3bc4034cdb435759e1f4e60e30);
+            
+        
+
+        marker_d45f934478ff1a9616f183e5038d3fef.bindPopup(popup_1d3eb5e7dcf0dae17988cf0bf0af3dd3)
+        ;
+
+        
+    
+    
+                marker_d45f934478ff1a9616f183e5038d3fef.setIcon(icon_c145d51a0c98e0c5e1853705a4a8ee6f);
+            
+    
+            var marker_8ea07c73f070104fc3cc74b09eb9351b = L.marker(
+                [19.057649, 79.489048],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_44ec28d360cb6a09ed4501a33b9f51b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94ce1dba891a24d33d958034070e7aba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e95956d7733471d71ac8106b3821c601 = $(`<div id="html_e95956d7733471d71ac8106b3821c601" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Mancherial<br><b>ULB:</b> Bellampally<br><b>Lat:</b> 19.057649<br><b>Lon:</b> 79.489048</div></div>`)[0];
+                popup_94ce1dba891a24d33d958034070e7aba.setContent(html_e95956d7733471d71ac8106b3821c601);
+            
+        
+
+        marker_8ea07c73f070104fc3cc74b09eb9351b.bindPopup(popup_94ce1dba891a24d33d958034070e7aba)
+        ;
+
+        
+    
+    
+                marker_8ea07c73f070104fc3cc74b09eb9351b.setIcon(icon_44ec28d360cb6a09ed4501a33b9f51b8);
+            
+    
+            var marker_b0fe3e22b17c1934a88f0efae3350d57 = L.marker(
+                [18.467347, 79.103693],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_d6a91856bd0bd43e5a1e7124c8bc9c70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0317aa286f5d895b14a2f847df120256 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6149ec549e9a7b3c200991a4d106a78f = $(`<div id="html_6149ec549e9a7b3c200991a4d106a78f" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Karimnagar<br><b>ULB:</b> Karimnagar<br><b>Lat:</b> 18.467347<br><b>Lon:</b> 79.103693</div></div>`)[0];
+                popup_0317aa286f5d895b14a2f847df120256.setContent(html_6149ec549e9a7b3c200991a4d106a78f);
+            
+        
+
+        marker_b0fe3e22b17c1934a88f0efae3350d57.bindPopup(popup_0317aa286f5d895b14a2f847df120256)
+        ;
+
+        
+    
+    
+                marker_b0fe3e22b17c1934a88f0efae3350d57.setIcon(icon_d6a91856bd0bd43e5a1e7124c8bc9c70);
+            
+    
+            var marker_ef14281efe3036b05def3b78c0027400 = L.marker(
+                [17.390878, 79.893106],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_1a03f84c7b161d7e860a6d140686d231 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0911b11592839495a8447ab77f8a22f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e24a04b3ed422e69d5ef152ebada4101 = $(`<div id="html_e24a04b3ed422e69d5ef152ebada4101" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Mahabubabad<br><b>ULB:</b> Maripeda<br><b>Lat:</b> 17.390878<br><b>Lon:</b> 79.893106</div></div>`)[0];
+                popup_0911b11592839495a8447ab77f8a22f8.setContent(html_e24a04b3ed422e69d5ef152ebada4101);
+            
+        
+
+        marker_ef14281efe3036b05def3b78c0027400.bindPopup(popup_0911b11592839495a8447ab77f8a22f8)
+        ;
+
+        
+    
+    
+                marker_ef14281efe3036b05def3b78c0027400.setIcon(icon_1a03f84c7b161d7e860a6d140686d231);
+            
+    
+            var marker_c3de242f3bedf62f2b99c9c111728f36 = L.marker(
+                [16.90449, 79.689832],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_19ed8ab4cf710684fb372bd86f0b81e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38642be42f45db89bf17bcf85dfaa6c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a95b9074667419465418e3a2bc84aad = $(`<div id="html_4a95b9074667419465418e3a2bc84aad" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Suryapet<br><b>ULB:</b> Neredcherla<br><b>Lat:</b> 16.90449<br><b>Lon:</b> 79.689832</div></div>`)[0];
+                popup_38642be42f45db89bf17bcf85dfaa6c5.setContent(html_4a95b9074667419465418e3a2bc84aad);
+            
+        
+
+        marker_c3de242f3bedf62f2b99c9c111728f36.bindPopup(popup_38642be42f45db89bf17bcf85dfaa6c5)
+        ;
+
+        
+    
+    
+                marker_c3de242f3bedf62f2b99c9c111728f36.setIcon(icon_19ed8ab4cf710684fb372bd86f0b81e7);
+            
+    
+            var marker_af4a9f115c634509d1134c3357257b76 = L.marker(
+                [18.146542, 79.202434],
+                {
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            var icon_28c22517cec1fa76f5374ffc2d35cb24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3b5eb86a103558e352a2135b57163a24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1960636e60d951089a3fa5d4fad2ccc8 = $(`<div id="html_1960636e60d951089a3fa5d4fad2ccc8" style="width: 100.0%; height: 100.0%;"><div style='width: 200px;'><b>District:</b> Siddipet<br><b>ULB:</b> Husnabad<br><b>Lat:</b> 18.146542<br><b>Lon:</b> 79.202434</div></div>`)[0];
+                popup_3b5eb86a103558e352a2135b57163a24.setContent(html_1960636e60d951089a3fa5d4fad2ccc8);
+            
+        
+
+        marker_af4a9f115c634509d1134c3357257b76.bindPopup(popup_3b5eb86a103558e352a2135b57163a24)
+        ;
+
+        
+    
+    
+                marker_af4a9f115c634509d1134c3357257b76.setIcon(icon_28c22517cec1fa76f5374ffc2d35cb24);
+            
+    
+            var layer_control_dd8e4ee49e7638328feaa612c3287e67_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_3a2f5df4c6463cef366264740239ffa5,
+                    "Esri Satellite" : tile_layer_deea78d06ca48da852f26b636e1776c6,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_dd8e4ee49e7638328feaa612c3287e67 = L.control.layers(
+                layer_control_dd8e4ee49e7638328feaa612c3287e67_layers.base_layers,
+                layer_control_dd8e4ee49e7638328feaa612c3287e67_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_db24735046545637c6fff5d12bff4d39);
+
+        
+    
+            tile_layer_3a2f5df4c6463cef366264740239ffa5.addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+            tile_layer_deea78d06ca48da852f26b636e1776c6.addTo(map_db24735046545637c6fff5d12bff4d39);
+        
+    
+                marker_b8cfc774163fbd69746b18f3fa50f9d0.setIcon(icon_c959f2cafce3be24f2433cce9d937e9a);
+            
+    
+                marker_8ab5717045c9b6f6ab5bcdb23688eade.setIcon(icon_3fb2ba0ea54cb64ccc6277773853a9b2);
+            
+    
+                marker_d45f934478ff1a9616f183e5038d3fef.setIcon(icon_c145d51a0c98e0c5e1853705a4a8ee6f);
+            
+    
+                marker_8ea07c73f070104fc3cc74b09eb9351b.setIcon(icon_44ec28d360cb6a09ed4501a33b9f51b8);
+            
+    
+                marker_b0fe3e22b17c1934a88f0efae3350d57.setIcon(icon_d6a91856bd0bd43e5a1e7124c8bc9c70);
+            
+    
+                marker_ef14281efe3036b05def3b78c0027400.setIcon(icon_1a03f84c7b161d7e860a6d140686d231);
+            
+    
+                marker_c3de242f3bedf62f2b99c9c111728f36.setIcon(icon_19ed8ab4cf710684fb372bd86f0b81e7);
+            
+    
+                marker_af4a9f115c634509d1134c3357257b76.setIcon(icon_28c22517cec1fa76f5374ffc2d35cb24);
+            
+</script>
+</html>
